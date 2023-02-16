@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div class="header__navbar">
+
+                    <div class="header__title">FPT University Academic Portal</div>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="#">Timetable</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="attendance.html">Attendance</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="student.html">Student</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="teacher">
+                    Campus
+                    <select name="" id="">
+                        <option value="">FU-HL</option>
+                        <option value="">FU-HCM</option>
+                        <option value="">FU-ĐN</option>
+                    </select>
+                    <br>
+                    Lecture<input type="text" value="sonnt"><input type="button" value="View">
+                </div>
+                <br>
+                <!-- <table class="timetable">
+                    <tr>
+                        <th>DATE</th>
+                        <th>SLOT</th>
+                        <th>TIME</th>
+                        <th>GROUP</th>
+                        <th>SUBJECT</th>
+                        <th>ROOM</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <tr>
+                        <td>17-01-2023</td>
+                        <td>Slot 1</td>
+                        <td>7:30-9:50</td>
+                        <td>SE1714</td>
+                        <td>DBI202</td>
+                        <td>BE-405</td>
+                        <td>Attended</td>
+                        <td>View</td>
+                    </tr>
+                    <tr>
+                        <td>17-01-2023</td>
+                        <td>Slot 2</td>
+                        <td>10:00-12:20</td>
+                        <td>SE1720</td>
+                        <td>IOT1702</td>
+                        <td>BE-408</td>
+                        <td>Attended</td>
+            Blue>Check</>
+                    </tr>
+                    <tr>
+                        <td>17-01-2023</td>
+                        <td>Slot 3</td>
+                        <td>12:50-15:10</td>
+                        <td>SE1723</td>
+                        <td>PRJ301</td>
+                        <td>BE-303</td>
+                        <td>Not yet</td>
+            Blue>Check</>
+                    </tr>
+                </table> -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">
+                                <span class="auto-style1"> <strong>Year</strong></span>
+                                <select>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option selected="selected" value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                                <br />
+                                Week
+                                <select >
+                                    <option value="1">02/01 To 08/01</option>
+                                    <option value="2">09/01 To 15/01</option>
+                                    <option value="3">16/01 To 22/01</option>
+                                    <option value="4">23/01 To 29/01</option>
+                                    <option value="5">30/01 To 05/02</option>
+                                    <option value="6">06/02 To 12/02</option>
+                                    <option selected="selected" value="7">13/02 To 19/02</option>
+                                    <option value="8">20/02 To 26/02</option>
+                                    <option value="9">27/02 To 05/03</option>
+                                    <option value="10">06/03 To 12/03</option>
+                                    <option value="11">13/03 To 19/03</option>
+
+                                </select>
+                            </th>
+                            <div >
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div>
+                                <th>13/02</th>
+                                <th>14/02</th>
+                                <th>15/02</th>
+                                <th>16/02</th>
+                                <th>17/02</th>
+                                <th>18/02</th>
+                                <th>19/02</th>
+                            </div>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <div >
+
+                            <tr>
+                                <td>Slot 1</td>
+                                <td>
+                                    <p>SE1744-CSD201 at
+                                            BE-405</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <p>SE1772-OSG202 at
+                                            BE-114</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>
+                                    <p>SE1754-OSG202 at
+                                            BE-117</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>)  </p>
+                                </td>
+                                <td>
+                                    <p>SE1741-CSD201 at
+                                            AL-L401</a><br />(<font color=red>Not yet</font>) (<font color=Blue>Check</font>)  <br /><span
+                                            class='label label-success'>(7:30-9:50)</span> </p>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Slot 2</td>
+                                <td>
+                                    <p>SE1754-OSG202 at
+                                            BE-117</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>
+                                    <p>SE1741-CSD201 at
+                                            DE-103</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>
+                                    <p>SE1744-CSD201 at
+                                            BE-405</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <p>SE1772-OSG202 at
+                                            BE-114</a><br />(<font color=red>Not yet</font>) (<font color=Blue>Check</font>)  </p>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Slot 3</td>
+                                <td>
+                                    <p>SE1737-CSD201 at
+                                            BE-119</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>
+                                    <p>SE1742-CSD201 at
+                                            BE-405</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>-</td>
+                                <td>
+                                    <p>SE1826-PRF192 at
+                                            BE-107</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>
+                                    <p>SE1738-CSD201 at
+                                            BE-404</a><br />(<font color=red>Not yet</font>) (<font color=Blue>Check</font>) </p>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Slot 4</td>
+                                <td>
+                                    <p>SE1826-PRF192 at
+                                            BE-107</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>
+                                    <p>SE1738-CSD201 at
+                                            BE-404</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>)  </p>
+                                </td>
+                                <td>
+                                    <p>SE1737-CSD201 at
+                                            BE-119</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>)</p>
+                                </td>
+                                <td>
+                                    <p>SE1742-CSD201 at
+                                            BE-405</a><br />(<font color=Green>Attended</font>) (<font color=Orange>View</font>) </p>
+                                </td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Slot 5</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Slot 6</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+                        </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
