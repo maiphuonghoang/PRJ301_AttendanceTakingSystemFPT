@@ -76,5 +76,14 @@ table{
     margin: 0 auto;
     border-spacing: 20px
 }
-
+/* Button */
+.btn{
+    padding: 10px;
+    background-color: #6b90da;
+    color: #fff;
+    font-size: 1rem;
+    width: 100px;
+    border: 1px solid  #000;
+    
+}
 
