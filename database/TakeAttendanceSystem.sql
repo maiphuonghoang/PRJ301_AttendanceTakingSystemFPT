@@ -133,3 +133,44 @@ DELETE FROM Instructor
 DELETE FROM TimeSlot
 DELETE FROM Course
 */
+
+--	1. VIEW ATTENDANCE 
+--	Attendance for PRJ301 SE1723 with lecturer SonNT5 at slot 3 on Friday 02/03/2023.
+--	This is the session number 6 in room BE-303 
+SELECT c.groupName [Group], c.studentId Code, c.studentName [Name], c.studentImage [Image],
+	   att.[status] [Status], att.comment Comment, ses.lecturerId Taker, 
+	   att.recordTime AS [Record Time], ses.roomId, c.courseId
+FROM (SELECT s.studentId, s.studentName, s.studentImage, g.groupId, g.groupName, g.courseId
+			FROM Student s JOIN Participate p ON s.studentId = p.studentId
+			JOIN [Group] g ON p.groupId = g.groupId WHERE g.groupId = 15 ) as c 
+JOIN [Session] ses ON ses.groupId = c.groupId 
+JOIN Attend att ON att.studentId = c.studentId  AND ses.sessionId = att.sessionId  
+WHERE ses.date = '02/03/2023'
+
+--	2. TAKE ATTENDANCE Chưa có dữ liệu 
+--	Attendance for sonnt5 at slot 3 on Friday 21/03/2023.
+--	This is the session number 19 of the PRJ301 - SE1723
+SELECT c.groupName [Group], c.studentId AS [Roll Number], c.studentName AS [Full Name],
+	   att.[status] Present, att.comment Comment, c.studentImage [Image], ses.roomId
+FROM (SELECT s.studentId, s.studentName, s.studentImage, g.groupId, g.groupName
+			FROM Student s JOIN Participate p ON s.studentId = p.studentId
+			JOIN [Group] g ON p.groupId = g.groupId WHERE g.groupId = 15 ) as c 
+JOIN [Session] ses ON ses.groupId = c.groupId 
+JOIN Attend att ON att.studentId = c.studentId  AND ses.sessionId = att.sessionId  
+WHERE ses.date = '03/21/2023'
+
+--	3. TIMATABLE 
+--	Week 20/02/2023 to 26/02/2023 of lecturer SonNT5
+SET DATEFORMAT dmy 
+SELECT i.instructorId, ses.date, ses.slotId, t.startTime, t.endTime, g.courseId, g.groupName, ses.roomId  
+FROM Instructor i  JOIN [Session] ses ON i.instructorId = ses.lecturerId
+				   JOIN [Group] g ON g.groupId = ses.groupId 
+				   JOIN TimeSlot t ON ses.slotId = t.slotId
+WHERE i.instructorId = 'sonnt5'
+AND ses.date BETWEEN '20/02/2023' AND '26/02/2023' ORDER BY ses.date
+
+--	4. REPORT ATTENDANCE 
+-- tạo procedure 
+
+
+
