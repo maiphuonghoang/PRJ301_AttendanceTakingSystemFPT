@@ -133,7 +133,7 @@ DELETE FROM Instructor
 DELETE FROM TimeSlot
 DELETE FROM Course
 */
-
+SET DATEFORMAT dmy 
 --	1. VIEW ATTENDANCE 
 --	Attendance for PRJ301 SE1723 with lecturer SonNT5 at slot 3 on Friday 02/03/2023.
 --	This is the session number 6 in room BE-303 
@@ -145,7 +145,7 @@ FROM (SELECT s.studentId, s.studentName, s.studentImage, g.groupId, g.groupName,
 			JOIN [Group] g ON p.groupId = g.groupId WHERE g.groupId = 15 ) as c 
 JOIN [Session] ses ON ses.groupId = c.groupId 
 JOIN Attend att ON att.studentId = c.studentId  AND ses.sessionId = att.sessionId  
-WHERE ses.date = '02/03/2023'
+WHERE ses.[date] = '03/02/2023'
 
 --	2. TAKE ATTENDANCE Chưa có dữ liệu 
 --	Attendance for sonnt5 at slot 3 on Friday 21/03/2023.
@@ -157,11 +157,10 @@ FROM (SELECT s.studentId, s.studentName, s.studentImage, g.groupId, g.groupName
 			JOIN [Group] g ON p.groupId = g.groupId WHERE g.groupId = 15 ) as c 
 JOIN [Session] ses ON ses.groupId = c.groupId 
 JOIN Attend att ON att.studentId = c.studentId  AND ses.sessionId = att.sessionId  
-WHERE ses.date = '03/21/2023'
+WHERE ses.date = '21/03/2023'
 
---	3. TIMATABLE 
+--	3. TIMETABLE 
 --	Week 20/02/2023 to 26/02/2023 of lecturer SonNT5
-SET DATEFORMAT dmy 
 SELECT i.instructorId, ses.date, ses.slotId, t.startTime, t.endTime, g.courseId, g.groupName, ses.roomId  
 FROM Instructor i  JOIN [Session] ses ON i.instructorId = ses.lecturerId
 				   JOIN [Group] g ON g.groupId = ses.groupId 
