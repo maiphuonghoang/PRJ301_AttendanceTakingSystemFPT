@@ -1,49 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+/**
+ *
+ * @author maiphuonghoang
  */
 package model;
 
-/**
- *
- * @author ADMIN
- */
+import java.util.ArrayList;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class Instructor {
     private String instructorId;
     private String instructorName;
     private String instructorImage;
-
-    public Instructor() {
-    }
-
-    public Instructor(String instructorId, String instructorName, String instructorImage) {
-        this.instructorId = instructorId;
-        this.instructorName = instructorName;
-        this.instructorImage = instructorImage;
-    }
-
-    public String getInstructorId() {
-        return instructorId;
-    }
-
-    public void setInstructorId(String instructorId) {
-        this.instructorId = instructorId;
-    }
-
-    public String getInstructorName() {
-        return instructorName;
-    }
-
-    public void setInstructorName(String instructorName) {
-        this.instructorName = instructorName;
-    }
-
-    public String getInstructorImage() {
-        return instructorImage;
-    }
-
-    public void setInstructorImage(String instructorImage) {
-        this.instructorImage = instructorImage;
-    }
+    private ArrayList<Group> groups = new ArrayList<>();;
+    private ArrayList<Session> sessions = new ArrayList<>();;
     
 }

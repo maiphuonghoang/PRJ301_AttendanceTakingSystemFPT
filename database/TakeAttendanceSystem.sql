@@ -170,6 +170,7 @@ AND ses.date BETWEEN '20/02/2023' AND '26/02/2023' ORDER BY ses.date
 
 --	4. REPORT ATTENDANCE 
 -- tạo procedure 
+SELECT s.sessionId, roomId, lecturerId, s.slotId, s.groupId, s.date from [Session] s WHERE s.lecturerId = 'sonnt5'
 
 
 

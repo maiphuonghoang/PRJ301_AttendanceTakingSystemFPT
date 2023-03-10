@@ -2,6 +2,7 @@
  *
  * @author maiphuonghoang
  */
+
 package model;
 
 import lombok.AllArgsConstructor;
@@ -10,15 +11,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Student {
-    private String studentId;
-    private String studentName;
-    private String studentImage;
-    
+public class Account {
+    private String gmail;
+    private String password;
 }
+
