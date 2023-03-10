@@ -1,4 +1,9 @@
 
+/* 
+    Created on : Mar 10, 2023, 11:54:28 PM
+    Author     : maiphuonghoang
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +11,9 @@
 }
 
 body{
-    line-height: 1.6rem;
+    line-height: 1rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
 
 }
 .grid {
@@ -96,49 +101,3 @@ select{
 }
 
 
-/* <table border="1">
-<thead>
-    <tr>
-        <th></th>
-        <th>Mon</th>
-        <th>Tue</th>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
-        <th>Sun</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td></td>
-        <c:forEach items="${sameWeekDays}" var="d">
-            <td>${d}
-            <fmt:formatDate value="${d}" pattern="EEEE" /></td>
-        </c:forEach>
-    </tr>
-
-    <c:forEach begin="1" end="6" step="1" var="n">
-        <tr>
-            <td>Slot ${n}</td>
-            <c:forEach items="${sessions}" var="s">
-                <c:if test="${s.tid.tid == n}">
-                    <c:forEach items="${sameWeekDays}" var="d">
-                        <c:if test="${s.date eq d}">
-                            <td>${s.gid.gname} ${s.gid.sid.sid} ${s.rid.rid}</td>
-                        </c:if>
-                    </c:forEach>
-                </c:if>
-            </c:forEach>
-        </tr>
-    </c:forEach>
-</tbody>
-</table>
-
-
-
-<td>${s.slotId.slotNumber}</td>
-<td>${s.date}</td>
-<td>${s.groupId.groupName}</td>
-<td>${s.groupId.courseId.courseId}</td>
-<td>${s.roomId.roomId}</td> */

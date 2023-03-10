@@ -25,6 +25,6 @@ public class Session {
     private Instructor lecturerId;
     private Group groupId;
     private Room roomId;
-    private boolean status; 
+    private boolean sessionStatus; 
       
 }

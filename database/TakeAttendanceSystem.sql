@@ -74,6 +74,7 @@ REFERENCES Student (studentId)
 	lecturerId varchar(20) NULL,
 	groupId int NULL,
 	roomId varchar(10) NULL,
+	[sessionStatus] bit NULL,
 	CONSTRAINT PK_Session PRIMARY KEY (sessionId)
 )
 ALTER TABLE [Session] ADD CONSTRAINT FK_Session_Group FOREIGN KEY(groupId)
@@ -161,7 +162,7 @@ WHERE ses.date = '21/03/2023'
 
 --	3. TIMETABLE 
 --	Week 20/02/2023 to 26/02/2023 of lecturer SonNT5
-SELECT i.instructorId, ses.date, ses.slotId, t.startTime, t.endTime, g.courseId, g.groupName, ses.roomId  
+SELECT i.instructorId, ses.date, t.slotNumber, t.startTime, t.endTime, g.courseId, g.groupName, ses.roomId, ses.sessionStatus
 FROM Instructor i  JOIN [Session] ses ON i.instructorId = ses.lecturerId
 				   JOIN [Group] g ON g.groupId = ses.groupId 
 				   JOIN TimeSlot t ON ses.slotId = t.slotId
@@ -173,4 +174,6 @@ AND ses.date BETWEEN '20/02/2023' AND '26/02/2023' ORDER BY ses.date
 SELECT s.sessionId, roomId, lecturerId, s.slotId, s.groupId, s.date from [Session] s WHERE s.lecturerId = 'sonnt5'
 
 
-
+				   
+select *  from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
+select ses.sessionId, ses.date, t.slotNumber, ses.lecturerId, ses.groupId, ses.roomId, ses.sessionStatus from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
