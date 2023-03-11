@@ -12,10 +12,12 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="login" method="post">
-        Username: <input type="text" name="username" value="" /><br/>
-        Password: <input type="password" name="password" value="" /><br/>
-        <input type="submit" value="Login" />           
+        <h1 style="color: red">${err}</h1>
+        <form action="login" method="POST">
+            Username:<input type="text" name="username" value="${username}" /> <br>
+            Password: <input type="text" name="password" value="${password}" /><br>
+            Remember your account <input type="checkbox" name="remember" value="true" /><br>
+            <input type="submit" value="Login" />
         </form>
 
     </body>

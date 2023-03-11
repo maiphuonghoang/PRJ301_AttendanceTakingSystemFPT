@@ -1,36 +1,24 @@
+/**
+ *
+ * @author maiphuonghoang
+ */
 package controller.authentication;
-
 
 import dal.AccountDBContext;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.Account;
 
-/**
- *
- * @author maiphuonghoang
- */
 public class LoginController extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try ( PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet LoginController</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet LoginController at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
     }
 
     @Override
@@ -44,14 +32,28 @@ public class LoginController extends HttpServlet {
             throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        Boolean remember = Boolean.parseBoolean(request.getParameter("remember"));
         Account account = new AccountDBContext().getAccount(username, password);
-        if (account != null || username.equals("sonnt") && password.equals("123")) {
+        if (account != null) {
             request.getSession().setAttribute("account", account);
-            response.getWriter().print("login successful");
+            if (remember) {
+//                ghi cookie vào máy người dùng 
+                Cookie uCookie = new Cookie("username", username);
+                uCookie.setMaxAge(24 * 3600);
+                Cookie pCookie = new Cookie("password", password);
+                pCookie.setMaxAge(24 * 3600);
+                //ghi cookie vào trình duyệt máy người dùng 
+                response.addCookie(uCookie);
+                response.addCookie(pCookie);
+            }
+            
         } else {
-            response.getWriter().print("login failed");
 
+            request.setAttribute("username", username);
+            request.setAttribute("password", password);
+            request.setAttribute("err", "Username or password incorrect");
+            request.getRequestDispatcher("view/authentication/login.jsp").forward(request, response);
         }
-    }
 
+    }
 }

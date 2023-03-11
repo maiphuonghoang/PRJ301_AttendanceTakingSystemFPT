@@ -231,7 +231,7 @@ AND ses.date BETWEEN '20/02/2023' AND '26/02/2023' ORDER BY ses.date
 SELECT s.sessionId, roomId, lecturerId, s.slotId, s.groupId, s.date from [Session] s WHERE s.lecturerId = 'sonnt5'
 
 select * from Account
-				   
+				  
 select *  from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
 select ses.sessionId, ses.date, t.slotNumber, ses.lecturerId, ses.groupId, ses.roomId, ses.sessionStatus from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
 
@@ -242,3 +242,12 @@ SELECT * FROM Session WHERE groupId = 4
 SELECT * FROM Student s join Participate p on s.studentId = p.studentId join 
 [group] g on p.groupId = g.groupId where g.groupId = 4
 
+
+SELECT COUNT(*) AS Total FROM Account a 
+INNER JOIN Account_Role ar on a.username = ar.username 
+INNER JOIN [Role] g on g.roleId = ar.roleId
+INNER JOIN [Role_Feature] rf on rf.roleId = g.roleId
+INNER JOIN [Feature] f on rf.featureId = f.featureId 
+where a.username = 'sonnt5@fpt.edu.vn' and f.url = '/instructor/timetable'
+
+						

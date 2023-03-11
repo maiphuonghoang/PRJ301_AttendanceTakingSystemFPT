@@ -17,7 +17,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class Account {
-    private String gmail;
+    private String username;
     private String password;
 }
 

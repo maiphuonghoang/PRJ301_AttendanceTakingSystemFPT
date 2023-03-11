@@ -16,7 +16,8 @@ import model.Account;
  *
  * @author ADMIN
  */
-public class AccountDBContext extends DBContext{
+public class AccountDBContext extends DBContext {
+
     public Account getAccount(String username, String password) {
         try {
             String sql = "SELECT [username], [password] from [Account] where username = ? and password = ?";
@@ -29,17 +30,19 @@ public class AccountDBContext extends DBContext{
                 return account;
             }
         } catch (SQLException ex) {
-            Logger.getLogger(AccountDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("loi lay ra account");
         }
         return null;
     }
+
     public int getNumberOfRoles(String username, String url) {
         try {
-            String sql = "select COUNT(*) AS Total from Account a inner join Account_Role ag on a.username = ag.username\n" +
-                            "inner join [Role] g on g.gid = ag.gid\n" +
-                            "inner join [Role_Feature] gf on gf.gid = g.gid\n" +
-                            "inner join [Feature] f on gf.fid = f.fid\n" +
-                            "where a.username = ? and f.url = ?";
+            String sql = "SELECT COUNT(*) AS Total FROM Account a \n"
+                    + "INNER JOIN Account_Role ar on a.username = ar.username \n"
+                    + "INNER JOIN [Role] g on g.roleId = ar.roleId\n"
+                    + "INNER JOIN [Role_Feature] rf on rf.roleId = g.roleId\n"
+                    + "INNER JOIN [Feature] f on rf.featureId = f.featureId \n"
+                    + "WHERE a.username = ? AND f.url = ?";
             PreparedStatement stm = connection.prepareStatement(sql);
             stm.setString(1, username);
             stm.setString(2, url);
@@ -48,9 +51,15 @@ public class AccountDBContext extends DBContext{
                 return rs.getInt("Total");
             }
         } catch (SQLException ex) {
-            Logger.getLogger(AccountDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("loi lay ra so luong role");
         }
         return -1;
     }
-    
+    public static void main(String[] args) {
+        int num = new AccountDBContext().getNumberOfRoles("HE171073@fpt.edu.vn", "/student/timetable");
+        System.out.println(num);
+        int num2 = new AccountDBContext().getNumberOfRoles("sonnt5@fpt.edu.vn", "/student/timetable");
+        System.out.println(num2);
+    }
+
 }
