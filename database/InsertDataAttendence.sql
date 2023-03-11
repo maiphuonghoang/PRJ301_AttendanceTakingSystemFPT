@@ -49,6 +49,7 @@ INSERT INTO Course (courseId, courseName) VALUES ('SEP490', N'SE Capstone Projec
 INSERT INTO Course (courseId, courseName) VALUES ('HCM202', N'Hồ Chí Minh Ideology');
 
 --	INSTRUCTOR TABLE 
+/*
 INSERT INTO Instructor (instructorId, instructorName) VALUES ('sonnt5', N'Ngô Tùng Sơn');
 INSERT INTO Instructor (instructorId, instructorName) VALUES ('thangnv75', N'Nguyễn Văn Thắng');
 INSERT INTO Instructor (instructorId, instructorName) VALUES ('khuongpd', N'Phùng Duy Khương');
@@ -56,7 +57,7 @@ INSERT INTO Instructor (instructorId, instructorName) VALUES ('trungnt', N'Nguy�
 INSERT INTO Instructor (instructorId, instructorName) VALUES ('yennth126', N'Nguyễn Thị Hoàng Yến');
 INSERT INTO Instructor (instructorId, instructorName) VALUES ('khaidq6', N'Đào Quang Khải');
 INSERT INTO Instructor (instructorId, instructorName) VALUES ('anhnh88', N'Nguyễn Hoàng Anh');
-
+*/
 
 --	GROUP TABLE 
 INSERT INTO [Group] (groupId, groupName, courseId, instructorId) VALUES (1,'AI1708', 'CEA201', 'thangnv75');
@@ -76,7 +77,7 @@ INSERT INTO [Group] (groupId, groupName, courseId, instructorId) VALUES (14,'SE1
 INSERT INTO [Group] (groupId, groupName, courseId, instructorId) VALUES (15,'SE1723', 'PRJ301', 'sonnt5');
 
 
-
+/*
 --	STUDENT TABLE 
 --	SE1723
 INSERT INTO Student (studentId, studentName) VALUES ('SE03520', N'Shunom Peter Bala');
@@ -415,6 +416,7 @@ INSERT INTO Student (studentId, studentName, studentImage) VALUES ('HE163639', N
 INSERT INTO Student (studentId, studentName, studentImage) VALUES ('HE163653', N'Vũ Duy Hưng', 'https://this-person-does-not-exist.com/img/avatar-111028f8ee3158a470545cab18eade67.jpg');
 INSERT INTO Student (studentId, studentName, studentImage) VALUES ('HE163774', N'Phạm Tiến Vinh', 'https://this-person-does-not-exist.com/img/avatar-115f3446fb71b08860242554235d9729.jpg');
 INSERT INTO Student (studentId, studentName, studentImage) VALUES ('HE163906', N'Đặng Phú Hải', 'https://this-person-does-not-exist.com/img/avatar-11619a77ee2b45ce6da584d7303edd46.jpg');
+*/
 
 
 

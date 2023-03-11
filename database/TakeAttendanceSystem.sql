@@ -1,6 +1,42 @@
 ﻿--CREATE DATABASE PRJ301_TakeAttendanceSystem
 USE PRJ301_TakeAttendanceSystem
 
+CREATE TABLE Account (
+    username VARCHAR(150) NOT NULL PRIMARY KEY,
+    [password] VARCHAR(150) NOT NULL,
+);
+CREATE TABLE [Role](
+	roleId int NOT NULL,
+	roleName varchar(150),
+	CONSTRAINT PK_Role PRIMARY KEY (roleId)
+)
+CREATE TABLE Account_Role(
+	username varchar(150) NOT NULL,
+	roleId int NOT NULL,
+	CONSTRAINT PK_Account_Role PRIMARY KEY (username, roleId)
+)
+ALTER TABLE Account_Role ADD CONSTRAINT FK_Account_Role_Account FOREIGN KEY(username)
+REFERENCES Account (username)
+ALTER TABLE Account_Role ADD CONSTRAINT FK_Account_Role_Role FOREIGN KEY(roleId)
+REFERENCES [Role] (roleId)
+
+CREATE TABLE Feature(
+	featureId int NOT NULL, 
+	featureName varchar(150),
+	[url] varchar(150),
+	CONSTRAINT PK_Feature PRIMARY KEY (featureId)
+)
+CREATE TABLE Role_Feature 
+(
+	roleId int NOT NULL,
+	featureId int NOT NULL,
+	CONSTRAINT PK_Role_Feature PRIMARY KEY (roleId, featureId)
+)
+ALTER TABLE Role_Feature ADD CONSTRAINT FK_Role_Feature_Role FOREIGN KEY(roleId)
+REFERENCES [Role](roleId)
+ALTER TABLE Role_Feature ADD CONSTRAINT FK_Role_Feature_Feature FOREIGN KEY(featureId)
+REFERENCES Feature(featureId)
+
 CREATE TABLE Course
 (
 	courseId varchar(10) NOT NULL,
@@ -13,8 +49,10 @@ CREATE TABLE Course
 	instructorId varchar(20) NOT NULL,
 	instructorName nvarchar(100),
 	instructorImage varchar(max),
-	CONSTRAINT PK_Instructor PRIMARY KEY (instructorId)
+	CONSTRAINT PK_Instructor PRIMARY KEY (instructorId),
 
+	accountId varchar(150) NOT NULL UNIQUE,
+    CONSTRAINT FK_Instructor_Account FOREIGN KEY (accountId) REFERENCES Account(username)
 )
 
 CREATE TABLE Student
@@ -22,7 +60,10 @@ CREATE TABLE Student
 	studentId varchar(8) NOT NULL,
 	studentName nvarchar(100),
 	studentImage varchar(max),
-	CONSTRAINT PK_Student PRIMARY KEY (studentId)
+	CONSTRAINT PK_Student PRIMARY KEY (studentId),
+
+	accountId varchar(150) NOT NULL UNIQUE,
+    CONSTRAINT FK_Student_Account FOREIGN KEY (accountId) REFERENCES Account(username)
  )
 
  CREATE TABLE TimeSlot
@@ -110,6 +151,12 @@ DROP TABLE Room
 DROP TABLE Instructor
 DROP TABLE TimeSlot
 DROP TABLE Course
+
+DROP TABLE Account_Role
+DROP TABLE Account
+DROP TABLE Role_Feature 
+DROP TABLE [Role]
+DROP TABLE Feature
 */
 
 /*
@@ -123,6 +170,12 @@ SELECT * FROM TimeSlot
 SELECT * FROM Attend
 SELECT * FROM Course
 
+SELECT * FROM Account_Role
+SELECT * FROM Account
+SELECT * FROM Role_Feature 
+SELECT * FROM [Role]
+SELECT * FROM Feature
+
 --	Thứ tự xóa bảng 
 DELETE FROM Attend
 DELETE FROM Participate
@@ -133,6 +186,12 @@ DELETE FROM Room
 DELETE FROM Instructor
 DELETE FROM TimeSlot
 DELETE FROM Course
+
+DELETE FROM Account_Role
+DELETE FROM Account
+DELETE FROM Role_Feature 
+DELETE FROM [Role]
+DELETE FROM Feature
 */
 SET DATEFORMAT dmy 
 --	1. VIEW ATTENDANCE 
@@ -173,7 +232,7 @@ AND ses.date BETWEEN '20/02/2023' AND '26/02/2023' ORDER BY ses.date
 -- tạo procedure 
 SELECT s.sessionId, roomId, lecturerId, s.slotId, s.groupId, s.date from [Session] s WHERE s.lecturerId = 'sonnt5'
 
-
+select * from Account
 				   
 select *  from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
 select ses.sessionId, ses.date, t.slotNumber, ses.lecturerId, ses.groupId, ses.roomId, ses.sessionStatus from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
