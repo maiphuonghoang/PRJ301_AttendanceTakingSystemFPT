@@ -4,6 +4,7 @@
     Author     : maiphuonghoang
 */
 
+
 *{
     margin: 0;
     padding: 0;
@@ -28,7 +29,9 @@ body{
 }
 
 .header{
-    background-image: linear-gradient(0, #fa7a53, rgb(238, 77, 45));
+    background-color: #e46ece;
+    /*background-color: #ffeb3b;*/
+    /*background-color: #f0975b;*/
     margin-bottom: 20px;
 }
 .header__navbar{
@@ -38,9 +41,6 @@ body{
 }
 .header__title{
     font-weight: 400;
-    font-size: 1.2rem;
-    color: #fff;
-
     font-size: 1.2rem;
 }
 .header__list{
@@ -62,25 +62,30 @@ body{
     font-weight: 800;
 }
 /* table */
-.teacher{
-    text-align: center;
-}
 
-.timetable{
-
-}
 table, th, td{
-    border:1px solid black;
-    padding: 10px;
+    border:1px solid #00000045;
+    padding: 15px;
+    text-align: center;
 
 }
+
 th{
-    background-color: #6b90da;
+    background-color: #04bb55;
+    text-transform: uppercase;
+}
+.hasSlot{
+    background-color: #ffffcc;
+    /*background-color: #ffeb3b;*/
+    margin: -15px;
+    padding: 15px;
+    text-align: start
 }
 table{
     border-collapse:collapse;
-    margin: 0 auto;
-    border-spacing: 20px
+    margin: 10px auto;
+    border-spacing: 20px;
+    width: 90%
 }
 /* Button */
 .btn--save{
@@ -91,7 +96,7 @@ table{
     width: 100px;
     border: 0.5px solid #000;
     cursor: pointer;
-    
+
 }
 .student-list{
     font-size: 0.8rem;
@@ -99,5 +104,3 @@ table{
 select{
     padding: 4px;
 }
-
-

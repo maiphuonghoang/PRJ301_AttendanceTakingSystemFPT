@@ -28,6 +28,7 @@ public class TimeTableController extends BaseAuthenticationController {
         String date = request.getParameter("date");
         if (date == null) {
             date = ChatGPT.getToday();
+            lecturerId = "sonnt5";
         }
         Date selectdate = Date.valueOf(date);
         List<Date> sameWeekDays = ChatGPT.getDaysInSameWeekOfMonth(selectdate);
@@ -41,25 +42,12 @@ public class TimeTableController extends BaseAuthenticationController {
     @Override
     protected void processGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        String lecturerId = "sonnt";
-//        Date date = Date.valueOf(ChatGPT.getToday());
-//        List<Date> sameWeekDays = ChatGPT.getDaysInSameWeekOfMonth(date);
-//        ArrayList<Session> sessions = new SessionDBContext().getSessionByWeek(lecturerId, sameWeekDays.get(0), sameWeekDays.get(sameWeekDays.size() - 1));
-//        request.setAttribute("sameWeekDays", sameWeekDays);
-//        request.setAttribute("sessions", sessions);
-//        request.setAttribute("today", date);
         processRequest(request, response);
     }
 
     @Override
     protected void processPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        String lecturerId = request.getParameter("lecturerId");
-//        Date date = Date.valueOf(request.getParameter("date"));
-//        List<Date> sameWeekDays = ChatGPT.getDaysInSameWeekOfMonth(date);
-//        ArrayList<Session> sessions = new SessionDBContext().getSessionByWeek(lecturerId, sameWeekDays.get(0), sameWeekDays.get(sameWeekDays.size() - 1));
-//        request.setAttribute("sameWeekDays", sameWeekDays);
-//        request.setAttribute("sessions", sessions);
         processRequest(request, response);
     }
 
