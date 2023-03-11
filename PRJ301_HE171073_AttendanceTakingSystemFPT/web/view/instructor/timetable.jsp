@@ -89,7 +89,7 @@
                                                         at ${s.roomId.roomId}<br/>
                                                         <c:if test="${s.sessionStatus}">(<font color=Green>Attended</font>)</c:if>
                                                         <c:if test="${!s.sessionStatus}">
-                                                            <a href="takeattend?id=${s.sessionId}">(<font color=red>Not yet</font>))</a>
+                                                            <a href="takeattend?id=${s.sessionId}">(<font color=red>Not yet</font>)</a>
                                                             </c:if>
                                                     </div>
 

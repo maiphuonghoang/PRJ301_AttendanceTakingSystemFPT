@@ -228,11 +228,17 @@ FROM Instructor i  JOIN [Session] ses ON i.instructorId = ses.lecturerId
 WHERE i.instructorId = 'sonnt5'
 AND ses.date BETWEEN '20/02/2023' AND '26/02/2023' ORDER BY ses.date
 
---	4. REPORT ATTENDANCE 
--- tạo procedure 
 SELECT s.sessionId, roomId, lecturerId, s.slotId, s.groupId, s.date from [Session] s WHERE s.lecturerId = 'sonnt5'
 
 select * from Account
 				   
 select *  from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
 select ses.sessionId, ses.date, t.slotNumber, ses.lecturerId, ses.groupId, ses.roomId, ses.sessionStatus from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
+
+SELECT * FROM Attend a right join Session s on a.sessionId = s.sessionId where s.groupId = 10
+SELECT * FROM Attend a inner join Session s on a.sessionId = s.sessionId where s.groupId = 4 order by s.date DESC
+SELECT * FROM Session WHERE groupId = 4
+
+SELECT * FROM Student s join Participate p on s.studentId = p.studentId join 
+[group] g on p.groupId = g.groupId where g.groupId = 4
+
