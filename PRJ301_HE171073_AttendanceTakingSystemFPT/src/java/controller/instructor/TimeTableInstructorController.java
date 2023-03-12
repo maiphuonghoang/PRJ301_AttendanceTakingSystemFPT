@@ -19,7 +19,7 @@ import java.util.List;
 import model.Session;
 import util.ChatGPT;
 
-public class TimeTableController extends BaseAuthenticationController {
+public class TimeTableInstructorController extends BaseAuthenticationController {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

@@ -1039,8 +1039,8 @@ INSERT INTO Account_Role (username, roleId) VALUES ('anhnh88@fpt.edu.vn', 2)
 
 INSERT INTO Feature (featureId, featureName, [url]) VALUES (1,	'Timetable for Instructor', '/instructor/timetable')
 INSERT INTO Feature (featureId, featureName, [url]) VALUES (2,	'Timetable for Student', '/student/timetable')
-INSERT INTO Feature (featureId, featureName, [url]) VALUES (3,	'Take Attendance for Student','/instructor/takeattendance')
-INSERT INTO Feature (featureId, featureName, [url]) VALUES (4,	'Report Attendance of Group','/instructor/reportattendance')
+INSERT INTO Feature (featureId, featureName, [url]) VALUES (3,	'Take Attendance for Student','/instructor/takeattend')
+INSERT INTO Feature (featureId, featureName, [url]) VALUES (4,	'Report Attendance of Group','/instructor/reportattend')
 
 INSERT INTO Role_Feature (roleId, featureId) VALUES (1,	1)
 INSERT INTO Role_Feature (roleId, featureId) VALUES (1,	2)

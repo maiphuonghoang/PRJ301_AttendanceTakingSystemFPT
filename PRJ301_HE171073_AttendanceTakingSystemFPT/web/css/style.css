@@ -3,7 +3,10 @@
     Created on : Mar 10, 2023, 11:54:28 PM
     Author     : maiphuonghoang
 */
-
+:root{
+    --paddingTd: 15px;
+    --marginTd: -15px;
+}
 
 *{
     margin: 0;
@@ -65,21 +68,30 @@ body{
 
 table, th, td{
     border:1px solid #00000045;
-    padding: 15px;
+    padding: var(--paddingTd);
     text-align: center;
-
 }
 
 th{
     background-color: #04bb55;
     text-transform: uppercase;
 }
+/*td > div.hasSlot{
+    position: relative;
+}*/
 .hasSlot{
     background-color: #ffffcc;
-    /*background-color: #ffeb3b;*/
-    margin: -15px;
-    padding: 15px;
-    text-align: start
+    text-align: start;
+    margin: var(--marginTd);
+    padding: var(--paddingTd);
+/*    margin: -20px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;*/
+
 }
 table{
     border-collapse:collapse;
@@ -90,7 +102,7 @@ table{
 /* Button */
 .btn--save{
     padding:8px;
-    background-color: #7d9ee0;
+    background-color: #04bb55;
     color: #fff;
     font-size: 1rem;
     width: 100px;
@@ -104,3 +116,9 @@ table{
 select{
     padding: 4px;
 }
+
+
+
+
+
+

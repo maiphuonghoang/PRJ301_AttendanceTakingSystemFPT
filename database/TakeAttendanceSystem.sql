@@ -250,4 +250,18 @@ INNER JOIN [Role_Feature] rf on rf.roleId = g.roleId
 INNER JOIN [Feature] f on rf.featureId = f.featureId 
 where a.username = 'sonnt5@fpt.edu.vn' and f.url = '/instructor/timetable'
 
-						
+SELECT * FROM Session  ses WHERE ses.sessionId = 17
+
+SELECT * FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId
+LEFT JOIN [Group] g On g.groupId = p.groupId 
+LEFT JOIN [Session] ses ON ses.groupId = g.groupId
+WHERE ses.sessionId = 17 
+
+SELECT s.studentId, s.studentName, s.studentImage, 
+ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date, 
+a.status, a.recordTime, ISNULL(a.comment, '') AS comment
+FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId
+LEFT JOIN [Group] g On g.groupId = p.groupId 
+LEFT JOIN [Session] ses ON ses.groupId = g.groupId
+LEFT JOIN Attend a ON a.sessionId = ses.sessionId
+WHERE ses.sessionId = 17 

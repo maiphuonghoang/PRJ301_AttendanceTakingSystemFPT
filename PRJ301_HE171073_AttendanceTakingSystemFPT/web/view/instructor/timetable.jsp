@@ -50,9 +50,9 @@
 
                     <form action="timetable" method="post" id="searchForm">      
                         <center>
-                        Lecturer <select name="lecturerId" >
-                            <option value="sonnt5" checked>sonnt5</option>
-                        </select>
+                            Lecturer <select name="lecturerId" >
+                                <option value="sonnt5" checked>sonnt5</option>
+                            </select>
                         </center>
                         <table border="1">
                             <tr>
@@ -81,18 +81,16 @@
                                     <c:forEach items="${requestScope.sameWeekDays}" var="d">
                                         <td>
                                             <c:forEach items="${requestScope.sessions}" var="s">
-
                                                 <c:if test="${s.date eq d and s.slotId.slotNumber eq n}">
                                                     <div class="${s.date eq d and s.slotId.slotNumber eq n ?"hasSlot":""}">
-
                                                         ${s.groupId.groupName}-${s.groupId.courseId.courseId}<br/>
                                                         at ${s.roomId.roomId}<br/>
                                                         <c:if test="${s.sessionStatus}">(<font color=Green>Attended</font>)</c:if>
                                                         <c:if test="${!s.sessionStatus}">
-                                                            <a href="takeattend?id=${s.sessionId}">(<font color=red>Not yet</font>)</a>
+                                                            (<font color=red>Not yet</font>)<br/>
+                                                            <a href="takeattend?sessionId=${s.sessionId}">(<font color=blue>Take attend</font>)</a>
                                                             </c:if>
                                                     </div>
-
                                                 </c:if>
                                             </c:forEach>
                                         </td>
