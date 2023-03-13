@@ -5,6 +5,7 @@ package util;
  * @author ADMIN
  */
 import java.sql.Date;
+import java.sql.Timestamp;
 
 import java.time.DayOfWeek;
 import java.time.format.TextStyle;
@@ -35,22 +36,13 @@ public class ChatGPT {
         String formattedToday = today.format(formatter);
         return formattedToday;
     }
-    public static Date getCurrentDateTime() {
-        Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-        String formattedDateTime = formatter.format(calendar.getTime());
-        java.util.Date utilDate = null;
-        try {
-            utilDate = formatter.parse(formattedDateTime);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        long time = utilDate.getTime();
-        return new java.sql.Date(time);
-    }
+public static Timestamp getCurrentDateTime() {  
+    return new Timestamp(System.currentTimeMillis());
+}
 
     public static void main(String[] args) {
-        java.sql.Date currentDateTime = getCurrentDateTime();
+        System.out.println();
+        java.sql.Timestamp currentDateTime = getCurrentDateTime();
         System.out.println(currentDateTime.toString());
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         String formattedDateTime = formatter.format(currentDateTime);

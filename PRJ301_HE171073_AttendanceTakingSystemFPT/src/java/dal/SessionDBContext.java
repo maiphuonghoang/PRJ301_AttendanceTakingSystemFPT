@@ -4,7 +4,6 @@
  */
 package dal;
 
-import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -80,12 +79,12 @@ public class SessionDBContext extends DBContext {
         ResultSet rs = null;
         ArrayList<Session> sessions = new ArrayList<>();
         try {
-            String sql = "SELECT i.instructorId, ses.date, ses.slotId, t.slotNumber, t.startTime, t.endTime, g.groupId, g.courseId, g.groupName, sessionId, ses.roomId, ses.sessionStatus  \n" +
-                                "FROM Instructor i  JOIN [Session] ses ON i.instructorId = ses.lecturerId\n" +
-                                "				   JOIN [Group] g ON g.groupId = ses.groupId \n" +
-                                "				   JOIN TimeSlot t ON ses.slotId = t.slotId\n" +
-                                "WHERE i.instructorId = ?\n" +
-                                "AND ses.date BETWEEN ? AND ? ORDER BY ses.date";
+            String sql = "SELECT i.instructorId, ses.date, ses.slotId, t.slotNumber, t.startTime, t.endTime, g.groupId, g.courseId, g.groupName, sessionId, ses.roomId, ses.sessionStatus  \n"
+                    + "FROM Instructor i  JOIN [Session] ses ON i.instructorId = ses.lecturerId\n"
+                    + "				   JOIN [Group] g ON g.groupId = ses.groupId \n"
+                    + "				   JOIN TimeSlot t ON ses.slotId = t.slotId\n"
+                    + "WHERE i.instructorId = ?\n"
+                    + "AND ses.date BETWEEN ? AND ? ORDER BY ses.date";
             stm = connection.prepareStatement(sql);
             stm.setString(1, lecturerId);
             stm.setDate(2, from);
@@ -110,17 +109,17 @@ public class SessionDBContext extends DBContext {
                 t.setStartTime(rs.getTime("startTime"));
                 t.setEndTime(rs.getTime("endTime"));
                 s.setSlotId(t);
-                
+
                 Course c = new Course();
                 c.setCourseId(rs.getString("courseId"));
-                
+
                 Group g = new Group();
                 g.setGroupId(rs.getInt("groupId"));
                 g.setGroupName(rs.getString("groupName"));
                 g.setCourseId(c);
                 s.setGroupId(g);
                 s.setDate(rs.getDate("date"));
-                
+
                 sessions.add(s);
 
             }
@@ -142,8 +141,35 @@ public class SessionDBContext extends DBContext {
         return sessions;
     }
 
+    public void updateSessionStatus(int sessionId) {
+        PreparedStatement stm = null;
+        ResultSet rs = null;
+        try {
+            String sql = "UPDATE [Session] SET [sessionStatus] = ? WHERE sessionId = ? ";
+            stm = connection.prepareStatement(sql);
+            stm.setBoolean(1, true);
+            stm.setInt(2, sessionId);
+            stm.executeUpdate();
+        } catch (Exception ex) {
+            System.out.println("loi update session");
+
+        } finally {
+            try {
+                stm.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(SessionDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            try {
+                connection.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(SessionDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
-        List<Session> list = new SessionDBContext().getSessionByWeek("sonnt5", Date.valueOf("2023-02-20"),  Date.valueOf("2023-02-26"));
+        List<Session> list = new SessionDBContext().getSessionByWeek("sonnt5", Date.valueOf("2023-02-20"), Date.valueOf("2023-02-26"));
         for (Session session : list) {
             System.out.println(session);
         }

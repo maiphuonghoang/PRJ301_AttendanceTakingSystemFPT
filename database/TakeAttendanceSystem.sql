@@ -229,8 +229,6 @@ WHERE i.instructorId = 'sonnt5'
 AND ses.date BETWEEN '20/02/2023' AND '26/02/2023' ORDER BY ses.date
 
 SELECT s.sessionId, roomId, lecturerId, s.slotId, s.groupId, s.date from [Session] s WHERE s.lecturerId = 'sonnt5'
-
-select * from Account
 				  
 select *  from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
 select ses.sessionId, ses.date, t.slotNumber, ses.lecturerId, ses.groupId, ses.roomId, ses.sessionStatus from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
@@ -256,36 +254,30 @@ SELECT * FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId
 LEFT JOIN [Group] g On g.groupId = p.groupId 
 LEFT JOIN [Session] ses ON ses.groupId = g.groupId
 WHERE ses.sessionId = 17 
-/*
-SELECT DISTINCT s.studentId, s.studentName, s.studentImage, 
+
+--take attendance
+SELECT s.studentId, s.studentName, s.studentImage, 
 ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date,  ses.[sessionStatus],
 a.status, a.recordTime, ISNULL(a.comment, '') AS comment
 FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId
 LEFT JOIN [Group] g On g.groupId = p.groupId 
 LEFT JOIN [Session] ses ON ses.groupId = g.groupId
 LEFT JOIN Attend a ON a.sessionId = ses.sessionId
-WHERE ses.sessionId = 130*/
-SELECT s.studentId, s.studentName, s.studentImage, g.groupId 
-,ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date,  ses.[sessionStatus]
-,a.status, a.recordTime, ISNULL(a.comment, '') AS comment
-FROM Student s RIGHT JOIN  Participate p On s.studentId =p.studentId
+WHERE ses.sessionId = 17
+
+--update attendance
+SELECT s.studentId, s.studentName, s.studentImage,
+ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date,  ses.[sessionStatus], ses.lecturerId
+a.status, a.recordTime, ISNULL(a.comment, '') AS comment
+FROM Student s JOIN  Participate p On s.studentId =p.studentId
  JOIN [Group] g On g.groupId = p.groupId 
  JOIN [Session] ses ON ses.groupId = g.groupId
- JOIN Attend a ON a.sessionId = ses.sessionId 
-WHERE a.studentId = s.studentId AND ses.sessionId = 130
+ JOIN Instructor i ON ses.lecturerId = i.instructorId
+ JOIN Attend a ON a.studentId = s.studentId
+ AND a.sessionId = ses.sessionId 
+WHERE ses.sessionId = 2
 
 SELECT a.studentId, a.sessionId, a.status, a.recordTime, a.comment FROM Attend a
-INSER
-create table testdate (
-  mydatetime datetime
-)
-select * from testdate
-insert into testdate values ( '2023-02-06 13:30:00.000'),
-insert into testdate values ( '2023-02-06')
-insert into testdate values ( '2023-03-13 18:32:17.081')
-insert into 
-
-INSERT INTO Attend (studentId,  sessionId, [status], recordTime, comment) VALUES (?, ?,?,?,?);
 
 SELECT a.studentId, a.sessionId, a.status, a.recordTime, a.comment,
 ses.date, ses.groupId, g.groupName, ses.sessionStatus, s.studentName

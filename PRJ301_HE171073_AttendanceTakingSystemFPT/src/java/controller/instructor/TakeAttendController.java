@@ -6,11 +6,11 @@ package controller.instructor;
 
 import controller.authentication.BaseAuthenticationController;
 import dal.AttendDBContext;
+import dal.SessionDBContext;
 import java.io.IOException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.sql.Date;
 import java.util.ArrayList;
 import model.Attend;
 import model.Session;
@@ -53,22 +53,11 @@ public class TakeAttendController extends BaseAuthenticationController {
                     .comment(request.getParameter("comment" + i))
                     .recordTime(ChatGPT.getCurrentDateTime())
                     .build());
-            System.out.println(s.getStudentId());
-            System.out.println(i);
         }
-
         ArrayList<Attend> takedStatusStudents = new AttendDBContext().insertTakedAttendsBySession(sessionId, takedStatus);
-        System.out.println("insert xong");
-        System.out.println(takedStatusStudents);
-        System.out.println("ok");
+        new SessionDBContext().updateSessionStatus(sessionId);
+        response.sendRedirect("viewattend?sessionId="+sessionId);
 
-        for (Attend takedStatusStudent : takedStatus) {
-            System.out.println(takedStatusStudent);
-        }
-        for (Attend takedStatusStudent : takedStatusStudents) {
-            System.out.println("ok4");
-            System.out.println(takedStatusStudent);
-        }
     }
 
 }

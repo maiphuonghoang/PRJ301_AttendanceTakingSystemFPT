@@ -6,6 +6,7 @@
 package model;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -23,6 +24,6 @@ public class Attend {
     private Student studentId;
     private Session sessionId;
     private boolean status;
-    private Date recordTime;   
+    private Timestamp recordTime;   
     private String comment;
 }

@@ -13,7 +13,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-        <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/base.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/timetable.css" rel="stylesheet" type="text/css"/>
         <script>
             function submitForm()
             {
@@ -51,7 +52,7 @@
                     <form action="timetable" method="post" id="searchForm">      
                         <center>
                             Lecturer <select name="lecturerId" >
-                                <option value="sonnt5" checked>sonnt5</option>
+                                <option value="sonnt5" checked >sonnt5</option>
                             </select>
                         </center>
                         <table border="1">
@@ -85,8 +86,11 @@
                                                     <div class="${s.date eq d and s.slotId.slotNumber eq n ?"hasSlot":""}">
                                                         ${s.groupId.groupName}-${s.groupId.courseId.courseId}<br/>
                                                         at ${s.roomId.roomId}<br/>
-                                                        <c:if test="${s.sessionStatus}">(<font color=Green>Attended</font>)</c:if>
-                                                        <c:if test="${!s.sessionStatus}">
+                                                        <c:if test="${s.sessionStatus}">
+                                                            (<font color=Green>Attended</font>)<br/>
+                                                            <a href="updateattend?sessionId=${s.sessionId}">(<font color=blue>Update attend</font>)</a>
+                                                            </c:if>
+                                                            <c:if test="${!s.sessionStatus}">
                                                             (<font color=red>Not yet</font>)<br/>
                                                             <a href="takeattend?sessionId=${s.sessionId}">(<font color=blue>Take attend</font>)</a>
                                                             </c:if>

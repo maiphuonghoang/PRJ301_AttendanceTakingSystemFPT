@@ -8,12 +8,14 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Attend;
 import model.Group;
+import model.Instructor;
 import model.Session;
 import model.Student;
 
@@ -53,7 +55,7 @@ public class AttendDBContext extends DBContext {
                         .studentId(s)
                         .sessionId(ses)
                         .status(rs.getBoolean("status"))
-                        .recordTime(rs.getDate("recordTime"))
+                        .recordTime(rs.getTimestamp("recordTime"))
                         .comment(rs.getString("comment"))
                         .build();
                 attends.add(a);
@@ -77,17 +79,6 @@ public class AttendDBContext extends DBContext {
 
     }
 
-    public static void main(String[] args) {
-        ArrayList<Attend> attends = new AttendDBContext().getNotTakeAttendsByeSession(17);
-        for (Attend attend : attends) {
-            System.out.println(attend);
-        }
-//        ArrayList<Attend> attends = new AttendDBContext().getAllAttends(130);
-//        for (Attend attend : attends) {
-//            System.out.println(attend);
-//        }
-    }
-
     public ArrayList<Attend> insertTakedAttendsBySession(int sessionId, ArrayList<Attend> takedStatus) {
         PreparedStatement stm = null;
         ResultSet rs = null;
@@ -99,15 +90,10 @@ public class AttendDBContext extends DBContext {
             stm = connection.prepareStatement(sql);
 
             for (int i = 0; i < takedStatus.size(); i++) {
-
-                Date date = takedStatus.get(i).getRecordTime();
-                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-                String formattedDateTime = formatter.format(date);
-
                 stm.setString(1, takedStatus.get(i).getStudentId().getStudentId());
                 stm.setInt(2, takedStatus.get(i).getSessionId().getSessionId());
                 stm.setBoolean(3, takedStatus.get(i).isStatus());
-                stm.setString(4, formattedDateTime);
+                stm.setTimestamp(4, takedStatus.get(i).getRecordTime());
                 stm.setString(5, takedStatus.get(i).getComment());
                 stm.executeUpdate();
 
@@ -119,17 +105,22 @@ public class AttendDBContext extends DBContext {
         }
         return attends;
     }
-    /*
-    public ArrayList<Attend> getTakedAttends(int sessionId) {
+
+    public ArrayList<Attend> getTakedAttendsBySession(int sessionId) {
         PreparedStatement stm = null;
         ResultSet rs = null;
         ArrayList<Attend> attends = new ArrayList<>();
         try {
-            String sql = "SELECT a.studentId, a.sessionId, a.status, a.recordTime, a.comment, ses.date, ses.groupId, g.groupName, ses.sessionStatus, s.studentName\n"
-                    + "from Attend a JOIN Session ses on a.sessionId = ses.sessionId \n"
-                    + "JOIN [Group] g On g.groupId = ses.groupId\n"
-                    + "JOIN Student s On a.studentId = s.studentId\n"
-                    + "where ses.sessionId = ?";
+            String sql = "SELECT s.studentId, s.studentName, s.studentImage,\n"
+                    + "ses.sessionId, ses.groupId, g.groupName, ses.date, ses.lecturerId,\n"
+                    + "a.status, a.recordTime, ISNULL(a.comment, '') AS comment\n"
+                    + "FROM Student s JOIN  Participate p On s.studentId =p.studentId\n"
+                    + "JOIN [Group] g On g.groupId = p.groupId \n"
+                    + "JOIN [Session] ses ON ses.groupId = g.groupId\n"
+                    + "JOIN Instructor i ON ses.lecturerId = i.instructorId\n"
+                    + "JOIN Attend a ON a.studentId = s.studentId\n"
+                    + "AND a.sessionId = ses.sessionId \n"
+                    + "WHERE ses.sessionId = ?";
             stm = connection.prepareStatement(sql);
             stm.setInt(1, sessionId);
             rs = stm.executeQuery();
@@ -141,18 +132,21 @@ public class AttendDBContext extends DBContext {
                 Student s = Student.builder()
                         .studentId(rs.getString("studentId"))
                         .studentName(rs.getString("studentName"))
+                        .studentImage(rs.getString("studentImage"))
                         .build();
+                Instructor i = Instructor.builder()
+                        .instructorId(rs.getString("lecturerId")).build();
                 Session ses = Session.builder()
                         .sessionId(rs.getInt("sessionId"))
                         .date(rs.getDate("date"))
                         .groupId(g)
-                        .sessionStatus(rs.getBoolean("sessionStatus"))
+                        .lecturerId(i)
                         .build();
                 Attend a = Attend.builder()
                         .studentId(s)
                         .sessionId(ses)
                         .status(rs.getBoolean("status"))
-                        .recordTime(rs.getDate("recordTime"))
+                        .recordTime(rs.getTimestamp("recordTime"))
                         .comment(rs.getString("comment"))
                         .build();
                 attends.add(a);
@@ -175,5 +169,17 @@ public class AttendDBContext extends DBContext {
         return attends;
 
     }
-     */
+
+    public static void main(String[] args) {
+
+        ArrayList<Attend> attends2 = new AttendDBContext().getTakedAttendsBySession(2);
+        for (Attend attend : attends2) {
+            System.out.println(attend);
+        }
+//        ArrayList<Attend> attends1 = new AttendDBContext().getNotTakeAttendsByeSession(17);
+//        for (Attend attend : attends1) {
+//            System.out.println(attend);
+//        }
+
+    }
 }

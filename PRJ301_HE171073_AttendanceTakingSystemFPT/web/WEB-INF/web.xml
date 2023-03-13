@@ -16,6 +16,14 @@
         <servlet-name>TakeAttendController</servlet-name>
         <servlet-class>controller.instructor.TakeAttendController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UpdateAttendController</servlet-name>
+        <servlet-class>controller.instructor.UpdateAttendController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewAttendController</servlet-name>
+        <servlet-class>controller.instructor.ViewAttendController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>TimeTableController</servlet-name>
         <url-pattern>/instructor/timetable</url-pattern>
@@ -39,6 +47,15 @@
     <servlet-mapping>
         <servlet-name>TakeAttendController</servlet-name>
         <url-pattern>/instructor/takeattend</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateAttendController</servlet-name>
+        <url-pattern>/instructor/updateattend</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ViewAttendController</servlet-name>
+        <url-pattern>/instructor/viewattend</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
