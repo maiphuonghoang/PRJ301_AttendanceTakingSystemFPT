@@ -237,10 +237,10 @@ select ses.sessionId, ses.date, t.slotNumber, ses.lecturerId, ses.groupId, ses.r
 
 SELECT * FROM Attend a right join Session s on a.sessionId = s.sessionId where s.groupId = 10
 SELECT * FROM Attend a inner join Session s on a.sessionId = s.sessionId where s.groupId = 4 order by s.date DESC
-SELECT * FROM Session WHERE groupId = 4
+SELECT * FROM Session WHERE groupId = 14
 
 SELECT * FROM Student s join Participate p on s.studentId = p.studentId join 
-[group] g on p.groupId = g.groupId where g.groupId = 4
+[group] g on p.groupId = g.groupId where g.groupId = 3
 
 
 SELECT COUNT(*) AS Total FROM Account a 
@@ -256,12 +256,40 @@ SELECT * FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId
 LEFT JOIN [Group] g On g.groupId = p.groupId 
 LEFT JOIN [Session] ses ON ses.groupId = g.groupId
 WHERE ses.sessionId = 17 
-
-SELECT s.studentId, s.studentName, s.studentImage, 
-ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date, 
+/*
+SELECT DISTINCT s.studentId, s.studentName, s.studentImage, 
+ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date,  ses.[sessionStatus],
 a.status, a.recordTime, ISNULL(a.comment, '') AS comment
 FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId
 LEFT JOIN [Group] g On g.groupId = p.groupId 
 LEFT JOIN [Session] ses ON ses.groupId = g.groupId
 LEFT JOIN Attend a ON a.sessionId = ses.sessionId
-WHERE ses.sessionId = 17 
+WHERE ses.sessionId = 130*/
+SELECT s.studentId, s.studentName, s.studentImage, g.groupId 
+,ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date,  ses.[sessionStatus]
+,a.status, a.recordTime, ISNULL(a.comment, '') AS comment
+FROM Student s RIGHT JOIN  Participate p On s.studentId =p.studentId
+ JOIN [Group] g On g.groupId = p.groupId 
+ JOIN [Session] ses ON ses.groupId = g.groupId
+ JOIN Attend a ON a.sessionId = ses.sessionId 
+WHERE a.studentId = s.studentId AND ses.sessionId = 130
+
+SELECT a.studentId, a.sessionId, a.status, a.recordTime, a.comment FROM Attend a
+INSER
+create table testdate (
+  mydatetime datetime
+)
+select * from testdate
+insert into testdate values ( '2023-02-06 13:30:00.000'),
+insert into testdate values ( '2023-02-06')
+insert into testdate values ( '2023-03-13 18:32:17.081')
+insert into 
+
+INSERT INTO Attend (studentId,  sessionId, [status], recordTime, comment) VALUES (?, ?,?,?,?);
+
+SELECT a.studentId, a.sessionId, a.status, a.recordTime, a.comment,
+ses.date, ses.groupId, g.groupName, ses.sessionStatus, s.studentName
+from Attend a JOIN Session ses on a.sessionId = ses.sessionId 
+JOIN [Group] g On g.groupId = ses.groupId
+JOIN Student s On a.studentId = s.studentId
+where ses.sessionId = 130
