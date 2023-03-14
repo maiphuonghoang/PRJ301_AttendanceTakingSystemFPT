@@ -4,13 +4,12 @@
  */
 package dal;
 
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Attend;
@@ -29,11 +28,11 @@ public class AttendDBContext extends DBContext {
             String sql = "SELECT s.studentId, s.studentName, s.studentImage, \n"
                     + "ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date,  ses.[sessionStatus],\n"
                     + "a.status, a.recordTime, ISNULL(a.comment, '') AS comment\n"
-                    + "FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId\n"
-                    + "LEFT JOIN [Group] g On g.groupId = p.groupId \n"
-                    + "LEFT JOIN [Session] ses ON ses.groupId = g.groupId\n"
-                    + "LEFT JOIN Attend a ON a.sessionId = ses.sessionId\n"
-                    + "WHERE ses.sessionId = ? ";
+                    + "FROM Student s JOIN  Participate p On s.studentId =p.studentId\n"
+                    + "JOIN [Group] g On g.groupId = p.groupId \n"
+                    + "JOIN [Session] ses ON ses.groupId = g.groupId\n"
+                    + "LEFT JOIN Attend a ON a.sessionId = ses.sessionId AND a.studentId = s.studentId\n"
+                    + "WHERE ses.sessionId = ?";
             stm = connection.prepareStatement(sql);
             stm.setInt(1, sessionId);
             rs = stm.executeQuery();
@@ -194,16 +193,116 @@ public class AttendDBContext extends DBContext {
         }
     }
 
-    public static void main(String[] args) {
+    public ArrayList<Attend> getReportAttendsOfGroup(String groupName, String courseId) {
+        PreparedStatement stm = null;
+        ResultSet rs = null;
+        ArrayList<Attend> attends = new ArrayList<>();
 
-        ArrayList<Attend> attends2 = new AttendDBContext().getTakedAttendsBySession(2);
-        for (Attend attend : attends2) {
-            System.out.println(attend);
+        try {
+            String sql = "EXEC Report_Attend ?, ?";
+            stm = connection.prepareStatement(sql);
+            stm.setString(1, groupName);
+            stm.setString(2, courseId);
+            rs = stm.executeQuery();
+            while (rs.next()) {
+                Group g = Group.builder()
+                        .groupId(rs.getInt("groupId"))
+                        .groupName(rs.getString("groupName"))
+                        .build();
+                Student s = Student.builder()
+                        .studentId(rs.getString("studentId"))
+                        .studentName(rs.getString("studentName"))
+                        .build();
+
+                Session ses = Session.builder()
+                        .date(rs.getDate("date"))
+                        .sessionStatus(rs.getBoolean("sessionStatus"))
+                        .groupId(g)
+                        .build();
+                Attend a = Attend.builder()
+                        .studentId(s)
+                        .sessionId(ses)
+                        .status(rs.getBoolean("status"))
+                        .build();
+                attends.add(a);
+            }
+
+        } catch (Exception ex) {
+            System.out.println("loi lay ra tat ca cac student trong 1 mon cua 1 group");
+
+        } finally {
+            try {
+                stm.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(AttendDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            try {
+                connection.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(AttendDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
+        return attends;
+
+    }
+
+    public LinkedHashMap<Student, Float> getReportAbsentPercentage(String groupName, String courseId) {
+        PreparedStatement stm = null;
+        ResultSet rs = null;
+        LinkedHashMap<Student, Float> attends = new LinkedHashMap<>();
+
+        try {
+            String sql = "EXEC Percent_Absent  ?, ?";
+            stm = connection.prepareStatement(sql);
+            stm.setString(1, groupName);
+            stm.setString(2, courseId);
+            rs = stm.executeQuery();
+            while (rs.next()) {
+                Student s = Student.builder()
+                        .studentId(rs.getString("studentId"))
+                        .studentName(rs.getString("studentName"))
+                        .build();
+
+                attends.put(s, rs.getFloat("percentAbsent"));
+            }
+
+        } catch (Exception ex) {
+            System.out.println("loi lay ra tat ca cac student trong 1 mon cua 1 group");
+
+        } finally {
+            try {
+                stm.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(AttendDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            try {
+                connection.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(AttendDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return attends;
+
+    }
+
+    public static void main(String[] args) {
+         AttendDBContext db = new AttendDBContext();
+        LinkedHashMap<Student, Float> attends4 = db.getReportAbsentPercentage("SE1638-NET", "PRN221");
+        for (HashMap.Entry<Student, Float> entry : attends4.entrySet()) {
+            System.out.println(entry.getKey()+ " " + entry.getValue());
+        }
+
+//        ArrayList<Attend> attends3 = new AttendDBContext().getReportAttendsOfGroup("SE1638-NET", "PRN221");
+//        for (Attend attend : attends3) {
+//            System.out.println(attend);
+//        }
+//        ArrayList<Attend> attends2 = new AttendDBContext().getTakedAttendsBySession(2);
+//        for (Attend attend : attends2) {
+//            System.out.println(attend);
+//        }
 //        ArrayList<Attend> attends1 = new AttendDBContext().getNotTakeAttendsByeSession(17);
 //        for (Attend attend : attends1) {
 //            System.out.println(attend);
 //        }
-
     }
 }

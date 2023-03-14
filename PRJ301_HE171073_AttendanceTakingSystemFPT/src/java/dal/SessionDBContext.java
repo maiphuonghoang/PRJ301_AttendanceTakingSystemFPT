@@ -20,33 +20,20 @@ import model.Session;
 import model.TimeSlot;
 
 public class SessionDBContext extends DBContext {
-
-    public ArrayList<Session> getAllSessions() {
+    public ArrayList<Session> getSessionsOfCourse(String groupName, String courseId) {
         PreparedStatement stm = null;
         ResultSet rs = null;
         ArrayList<Session> sessions = new ArrayList<>();
         try {
-            String sql = "select ses.sessionId, ses.date, t.slotNumber, ses.lecturerId, ses.groupId, ses.roomId, ses.sessionStatus, ses.slotId from [Session] ses JOIN TimeSlot t ON ses.slotId  = t.slotId ";
+            String sql = "select * from Session ses join [group] g on ses.groupId = g.groupId WHERE g.groupName = ? AND g.courseId = ?";
             stm = connection.prepareStatement(sql);
+            stm.setString(1, groupName);
+            stm.setString(2, courseId);
             rs = stm.executeQuery();
             while (rs.next()) {
                 Session s = new Session();
                 s.setSessionId(rs.getInt("sessionId"));
-                s.setSessionStatus(rs.getBoolean("sessionStatus"));
-
-                Room r = new Room();
-                r.setRoomId(rs.getString("roomId"));
-                s.setRoomId(r);
-
-                Instructor i = new Instructor();
-                i.setInstructorId(rs.getString("lecturerId"));
-                s.setLecturerId(i);
-
-                TimeSlot t = new TimeSlot();
-                t.setSlotNumber(rs.getInt("slotNumber"));
-                t.setSlotId(rs.getInt("slotId"));
-                s.setSlotId(t);
-
+                
                 Group g = new Group();
                 g.setGroupId(rs.getInt("groupId"));
                 s.setGroupId(g);
@@ -167,12 +154,16 @@ public class SessionDBContext extends DBContext {
         }
 
     }
-
     public static void main(String[] args) {
-        List<Session> list = new SessionDBContext().getSessionByWeek("sonnt5", Date.valueOf("2023-02-20"), Date.valueOf("2023-02-26"));
+        List<Session> list = new SessionDBContext().getSessionsOfCourse("SE1723", "PRJ301");
         for (Session session : list) {
             System.out.println(session);
         }
+    
+//        List<Session> list = new SessionDBContext().getSessionByWeek("sonnt5", Date.valueOf("2023-02-20"), Date.valueOf("2023-02-26"));
+//        for (Session session : list) {
+//            System.out.println(session);
+//        }
 //        List<Session> list = new SessionDBContext().getAllSessions();
 //        for (Session session : list) {
 //            System.out.println(session);

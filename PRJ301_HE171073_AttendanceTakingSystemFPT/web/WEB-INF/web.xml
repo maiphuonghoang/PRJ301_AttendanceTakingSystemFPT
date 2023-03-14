@@ -24,6 +24,10 @@
         <servlet-name>ViewAttendController</servlet-name>
         <servlet-class>controller.instructor.ViewAttendController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ReportAttendController</servlet-name>
+        <servlet-class>controller.instructor.ReportAttendController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>TimeTableController</servlet-name>
         <url-pattern>/instructor/timetable</url-pattern>
@@ -52,10 +56,13 @@
         <servlet-name>UpdateAttendController</servlet-name>
         <url-pattern>/instructor/updateattend</url-pattern>
     </servlet-mapping>
-
     <servlet-mapping>
         <servlet-name>ViewAttendController</servlet-name>
         <url-pattern>/instructor/viewattend</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReportAttendController</servlet-name>
+        <url-pattern>/instructor/reportattend</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
