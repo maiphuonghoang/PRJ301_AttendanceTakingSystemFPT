@@ -170,6 +170,30 @@ public class AttendDBContext extends DBContext {
 
     }
 
+    public void updateTakedAttendsBySession(int sessionId, ArrayList<Attend> changeattends) {
+        PreparedStatement stm = null;
+        ResultSet rs = null;
+        try {
+            String sql = "UPDATE [Attend] SET [status] = ?, [recordTime] = ? ,[comment] = ? WHERE sessionId = ? AND  [studentId] = ?";
+
+            stm = connection.prepareStatement(sql);
+
+            for (int i = 0; i < changeattends.size(); i++) {
+                stm.setString(5, changeattends.get(i).getStudentId().getStudentId());
+                stm.setBoolean(1, changeattends.get(i).isStatus());
+                stm.setTimestamp(2, changeattends.get(i).getRecordTime());
+                stm.setString(3, changeattends.get(i).getComment());
+                stm.setInt(4, sessionId);
+                stm.executeUpdate();
+
+            }
+
+        } catch (SQLException ex) {
+            System.out.println("loi khi update session da diem danh");
+            Logger.getLogger(AttendDBContext.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
     public static void main(String[] args) {
 
         ArrayList<Attend> attends2 = new AttendDBContext().getTakedAttendsBySession(2);

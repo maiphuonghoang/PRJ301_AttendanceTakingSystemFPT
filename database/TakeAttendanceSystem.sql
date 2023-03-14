@@ -267,14 +267,14 @@ WHERE ses.sessionId = 17
 
 --update attendance
 SELECT s.studentId, s.studentName, s.studentImage,
-ses.sessionId, ses.slotId, ses.groupId, g.groupName, ses.date,  ses.[sessionStatus], ses.lecturerId
+ses.sessionId, ses.groupId, g.groupName, ses.date, ses.lecturerId,
 a.status, a.recordTime, ISNULL(a.comment, '') AS comment
 FROM Student s JOIN  Participate p On s.studentId =p.studentId
- JOIN [Group] g On g.groupId = p.groupId 
- JOIN [Session] ses ON ses.groupId = g.groupId
- JOIN Instructor i ON ses.lecturerId = i.instructorId
- JOIN Attend a ON a.studentId = s.studentId
- AND a.sessionId = ses.sessionId 
+JOIN [Group] g On g.groupId = p.groupId 
+JOIN [Session] ses ON ses.groupId = g.groupId
+JOIN Instructor i ON ses.lecturerId = i.instructorId
+JOIN Attend a ON a.studentId = s.studentId
+AND a.sessionId = ses.sessionId 
 WHERE ses.sessionId = 2
 
 SELECT a.studentId, a.sessionId, a.status, a.recordTime, a.comment FROM Attend a
@@ -285,3 +285,4 @@ from Attend a JOIN Session ses on a.sessionId = ses.sessionId
 JOIN [Group] g On g.groupId = ses.groupId
 JOIN Student s On a.studentId = s.studentId
 where ses.sessionId = 130
+
