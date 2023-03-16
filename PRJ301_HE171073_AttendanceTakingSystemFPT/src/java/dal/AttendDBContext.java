@@ -218,16 +218,15 @@ public class AttendDBContext extends DBContext {
         }
     }
 
-    public ArrayList<Attend> getReportAttendsOfGroup(String groupName, String courseId) {
+    public ArrayList<Attend> getReportAttendsOfGroup(int groupId) {
         PreparedStatement stm = null;
         ResultSet rs = null;
         ArrayList<Attend> attends = new ArrayList<>();
 
         try {
-            String sql = "EXEC Report_Attend ?, ?";
+            String sql = "EXEC Report_Attend ?";
             stm = connection.prepareStatement(sql);
-            stm.setString(1, groupName);
-            stm.setString(2, courseId);
+            stm.setInt(1, groupId);
             rs = stm.executeQuery();
             while (rs.next()) {
                 Group g = Group.builder()
@@ -271,16 +270,15 @@ public class AttendDBContext extends DBContext {
 
     }
 
-    public LinkedHashMap<Student, Float> getReportAbsentPercentage(String groupName, String courseId) {
+    public LinkedHashMap<Student, Float> getReportAbsentPercentage(int groupId) {
         PreparedStatement stm = null;
         ResultSet rs = null;
         LinkedHashMap<Student, Float> attends = new LinkedHashMap<>();
 
         try {
-            String sql = "EXEC Percent_Absent  ?, ?";
+            String sql = "EXEC Percent_Absent  ?";
             stm = connection.prepareStatement(sql);
-            stm.setString(1, groupName);
-            stm.setString(2, courseId);
+            stm.setInt(1, groupId);
             rs = stm.executeQuery();
             while (rs.next()) {
                 Student s = Student.builder()

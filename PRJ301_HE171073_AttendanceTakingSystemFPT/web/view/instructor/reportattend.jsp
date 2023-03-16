@@ -3,7 +3,6 @@
     Created on : Mar 14, 2023, 1:00:44 PM
     Author     : maiphuonghoang
 --%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -51,27 +50,14 @@
                     <form action="reportattend" action="POST">
                         <center>
 
-                            Lecture <select name="" id="">
-                                <option name ="instructorId" value="sonnt5" checked>sonnt5</option>
-
-                            </select>
-                            Course
-                            <select name="courseId">
+                            Lecture: ${lecturerId}
+                            <select name="groupId" id="groupSelect">
                                 <c:forEach items="${groups}" var="g">
 
-                                    <option value="${g.courseId.courseId}">${g.courseId.courseId}</option>
+                                    <option value="${g.groupId}" >${g.courseId.courseId} - ${g.groupName}</option>
+
                                 </c:forEach>
-
-                            </select>   
-                            Group
-                            <select name="groupName" id="">
-                                <c:forEach items="${groups}" var="g">
-
-                                    <option value="${g.groupName}" >${g.groupName}</option>
-                                </c:forEach>
-
                             </select>
-
                             <input class="" type="submit" value="View">
 
                         </center>                                       
@@ -118,7 +104,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div style="margin-left: 30px;">
+                <div style="margin-left: 80px;">
                     <br>
                     <b>Note</b>:</p>
                     <ul>
@@ -133,6 +119,7 @@
                 </div>
             </div>
         </div>
+
 
     </body>
 </html>

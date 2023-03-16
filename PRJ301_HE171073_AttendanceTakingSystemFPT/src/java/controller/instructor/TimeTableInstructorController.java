@@ -16,7 +16,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
-import model.Account;
 import model.Instructor;
 import model.Session;
 import util.ChatGPT;
@@ -26,27 +25,17 @@ public class TimeTableInstructorController extends BaseAuthenticationController 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        Account account = (Account) request.getSession().getAttribute("account");
-        String accountId = null;
-        if (account == null) {
-            Cookie[] cookies = request.getCookies();
-            if (cookies != null) {
-                for (Cookie cooky : cookies) {
-                    if (cooky.getName().equals("username")) {
-                        accountId = cooky.getValue();
-                        break;
-                    }
-                }
-            }
-        } else {
-            accountId = account.getUsername();
-        }
+        String accountId = BaseAuthenticationController.getAccountId(request, response);
+
         Instructor i = new AccountDBContext().getInstructorFromAccount(accountId);
         String lecturerId = i.getInstructorId();
         String date = request.getParameter("date");
         if (date == null) {
             date = ChatGPT.getToday();
         }
+        Cookie accountCookie = new Cookie("accountId", lecturerId);
+        accountCookie.setMaxAge(24 * 3600);
+        response.addCookie(accountCookie);
         Date selectdate = Date.valueOf(date);
         List<Date> sameWeekDays = ChatGPT.getDaysInSameWeekOfMonth(selectdate);
         ArrayList<Session> sessions = new SessionDBContext().getSessionInstructorByWeek(lecturerId, sameWeekDays.get(0), sameWeekDays.get(sameWeekDays.size() - 1));

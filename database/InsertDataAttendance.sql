@@ -150,20 +150,22 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (9,  1,'14/02/2023', 3, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (10, 1, '17/02/2023', 4, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (11, 1, '21/02/2023', 3, 'sonnt5', 15, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (12, 0, '24/02/2023', 4, 'sonnt5', 15, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (13, 0, '28/2/2023', 3, 'sonnt5', 15, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (14, 0, '3/3/2023', 4, 'sonnt5', 15, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (15, 0, '7/3/2023', 3, 'sonnt5', 15, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (16, 0, '10/3/2023', 4, 'sonnt5', 15, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (17, 0, '14/3/2023', 3, 'sonnt5', 15, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (12, 1, '24/02/2023', 4, 'sonnt5', 15, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (13, 1, '28/2/2023', 3, 'sonnt5', 15, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (14, 1, '3/3/2023', 4, 'sonnt5', 15, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (15, 1, '7/3/2023', 3, 'sonnt5', 15, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (16, 1, '10/3/2023', 4, 'sonnt5', 15, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (17, 1, '14/3/2023', 3, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (18, 0, '17/3/2023', 4, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (19, 0, '21/3/2023', 3, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (20, 0, '24/3/2023', 4, 'sonnt5', 15, 'BE-303');
+
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (21, 1, '14/01/2023', 9, 'trungnt', 11, 'DE-216');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (22, 1, '11/02/2023', 9, 'trungnt', 11, 'DE-216');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (23, 0, '25/02/2023', 9, 'trungnt', 11, 'DE-216');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (24, 0, '11/03/2023', 9, 'trungnt', 11, 'DE-216');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (23, 1, '25/02/2023', 9, 'trungnt', 11, 'DE-216');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (24, 1, '11/03/2023', 9, 'trungnt', 11, 'DE-216');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (25, 0, '01/04/2023', 9, 'trungnt', 11, 'DE-216');
+
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (26, 1, '21/02/2023', 4, 'yennth126', 12, 'BE-307');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (27, 1, '24/02/2023', 3, 'yennth126', 12, 'BE-307');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (28, 1, '28/02/2023', 4, 'yennth126', 12, 'BE-307');
@@ -171,9 +173,9 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (30, 1, '07/03/2023', 4, 'yennth126', 12, 'BE-307');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (31, 1, '10/03/2023', 3, 'yennth126', 12, 'BE-307');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (32, 1, '14/03/2023', 4, 'yennth126', 12, 'BE-307');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (33, 1, '17/03/2023', 3, 'yennth126', 12, 'BE-307');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (34, 1, '21/03/2023', 4, 'yennth126', 12, 'BE-307');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (35, 1, '24/03/2023', 3, 'yennth126', 12, 'BE-307');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (33, 0, '17/03/2023', 3, 'yennth126', 12, 'BE-307');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (34, 0, '21/03/2023', 4, 'yennth126', 12, 'BE-307');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (35, 0, '24/03/2023', 3, 'yennth126', 12, 'BE-307');
 
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (36, 1, '5/1/2023', 3, 'khaidq6', 13, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (37, 1, '7/1/2023', 4, 'khaidq6', 13, 'BE-303');
@@ -186,13 +188,13 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (44, 1, '13/2/2023', 4, 'khaidq6', 13, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (45, 1, '16/2/2023', 3, 'khaidq6', 13, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (46, 1, '20/2/2023', 4, 'khaidq6', 13, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (47, 0, '23/2/2023', 3, 'khaidq6', 13, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (48, 0, '27/02/2023', 4, 'khaidq6', 13, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (49, 0, '02/03/2023', 3, 'khaidq6', 13, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (50, 0, '06/03/2023', 4, 'khaidq6', 13, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (51, 0, '09/03/2023', 3, 'khaidq6', 13, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (52, 0, '13/03/2023', 4, 'khaidq6', 13, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (53, 0, '16/03/2023', 3, 'khaidq6', 13, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (47, 1, '23/2/2023', 3, 'khaidq6', 13, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (48, 1, '27/02/2023', 4, 'khaidq6', 13, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (49, 1, '02/03/2023', 3, 'khaidq6', 13, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (50, 1, '06/03/2023', 4, 'khaidq6', 13, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (51, 1, '09/03/2023', 3, 'khaidq6', 13, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (52, 1, '13/03/2023', 4, 'khaidq6', 13, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (53, 1, '16/03/2023', 3, 'khaidq6', 13, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (54, 0, '20/03/2023', 4, 'khaidq6', 13, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (55, 0, '23/03/2023', 3, 'khaidq6', 13, 'BE-303');
 
@@ -208,12 +210,12 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (64, 1, '16/02/2023', 4, 'anhnh88', 14, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (65, 1, '20/02/2023', 3, 'anhnh88', 14, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (66, 1, '23/02/2023', 4, 'anhnh88', 14, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (67, 0, '27/02/2023', 3, 'anhnh88', 14, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (68, 0, '02/03/2023', 4, 'anhnh88', 14, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (69, 0, '06/03/2023', 3, 'anhnh88', 14, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (70, 0, '09/03/2023', 4, 'anhnh88', 14, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (71, 0, '13/03/2023', 3, 'anhnh88', 14, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (72, 0, '16/03/2023', 4, 'anhnh88', 14, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (67, 1, '27/02/2023', 3, 'anhnh88', 14, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (68, 1, '02/03/2023', 4, 'anhnh88', 14, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (69, 1, '06/03/2023', 3, 'anhnh88', 14, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (70, 1, '09/03/2023', 4, 'anhnh88', 14, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (71, 1, '13/03/2023', 3, 'anhnh88', 14, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (72, 1, '16/03/2023', 4, 'anhnh88', 14, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (73, 0, '20/03/2023', 3, 'anhnh88', 14, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (74, 0, '23/03/2023', 4, 'anhnh88', 14, 'BE-303');
 ----
@@ -229,12 +231,12 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (84, 1, '16/02/2023', 4, 'sonnt5', 8, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (85, 1, '20/02/2023', 3, 'sonnt5', 8, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (86, 1, '23/02/2023', 4, 'sonnt5', 8, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (87, 0, '27/02/2023', 3, 'sonnt5', 8, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (88, 0, '02/03/2023', 4, 'sonnt5', 8, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (89, 0, '06/03/2023', 3, 'sonnt5', 8, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (90, 0, '09/03/2023', 4, 'sonnt5', 8, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (91, 0, '13/03/2023', 3, 'sonnt5', 8, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (92, 0, '16/03/2023', 4, 'sonnt5', 8, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (87, 1, '27/02/2023', 3, 'sonnt5', 8, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (88, 1, '02/03/2023', 4, 'sonnt5', 8, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (89, 1, '06/03/2023', 3, 'sonnt5', 8, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (90, 1, '09/03/2023', 4, 'sonnt5', 8, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (91, 1, '13/03/2023', 3, 'sonnt5', 8, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (92, 1, '16/03/2023', 4, 'sonnt5', 8, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (93, 0, '20/03/2023', 3, 'sonnt5', 8, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (94, 0, '23/03/2023', 4, 'sonnt5', 8, 'BE-304');
 
@@ -253,194 +255,197 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (105, 1, '16/2/2023', 3, 'sonnt5', 3, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (106, 1, '20/2/2023', 4, 'sonnt5', 3, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (107, 1, '23/2/2023', 3, 'sonnt5', 3, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (108, 0, '27/02/2023', 4, 'sonnt5', 3, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (109, 0, '02/03/2023', 3, 'sonnt5', 3, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (110, 0, '06/03/2023', 4, 'sonnt5', 3, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (111, 0, '09/03/2023', 3, 'sonnt5', 3, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (112, 0, '13/03/2023', 4, 'sonnt5', 3, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (113, 0, '16/03/2023', 3, 'sonnt5', 3, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (108, 1, '27/02/2023', 4, 'sonnt5', 3, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (109, 1, '02/03/2023', 3, 'sonnt5', 3, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (110, 1, '06/03/2023', 4, 'sonnt5', 3, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (111, 1, '09/03/2023', 3, 'sonnt5', 3, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (112, 1, '13/03/2023', 4, 'sonnt5', 3, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (113, 1, '16/03/2023', 3, 'sonnt5', 3, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (114, 0, '20/03/2023', 4, 'sonnt5', 3, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (115, 0, '23/03/2023', 3, 'sonnt5', 3, 'BE-304');
+
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (116, 1, '21/02/2023', 4, 'sonnt5', 10, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (117, 0, '24/02/2023', 3, 'sonnt5', 10, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (118, 0, '28/02/2023', 4, 'sonnt5', 10, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (119, 0, '03/03/2023', 3, 'sonnt5', 10, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (120, 0, '07/03/2023', 4, 'sonnt5', 10, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (121, 0, '10/03/2023', 3, 'sonnt5', 10, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (122, 0, '14/03/2023', 4, 'sonnt5', 10, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (117, 1, '24/02/2023', 3, 'sonnt5', 10, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (118, 1, '28/02/2023', 4, 'sonnt5', 10, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (119, 1, '03/03/2023', 3, 'sonnt5', 10, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (120, 1, '07/03/2023', 4, 'sonnt5', 10, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (121, 1, '10/03/2023', 3, 'sonnt5', 10, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (122, 1, '14/03/2023', 4, 'sonnt5', 10, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (123, 0, '17/03/2023', 3, 'sonnt5', 10, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (124, 0, '21/03/2023', 4, 'sonnt5', 10, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (125, 0, '24/03/2023', 3, 'sonnt5', 10, 'BE-304');
+
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (126, 1, '14/01/2023', 9, 'sonnt5', 4, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (127, 1, '11/02/2023', 9, 'sonnt5', 4, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (128, 0, '25/02/2023', 9, 'sonnt5', 4, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (129, 0, '11/03/2023', 9, 'sonnt5', 4, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (128, 1, '25/02/2023', 9, 'sonnt5', 4, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (129, 1, '11/03/2023', 9, 'sonnt5', 4, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (130, 0, '01/04/2023', 9, 'sonnt5', 4, 'BE-304');
 
 
 --	PARTICIPATE TABLE 
 --	Insert into Participate Các thầy cô còn lại 
-INSERT Participate (groupId, studentId) VALUES (1, 'DE170703')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE153678')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE161700')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE161706')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE161755')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE163415')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE163635')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE164044')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE170072')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE170180')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE170201')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE170203')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE170420')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE170595')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE171098')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE171319')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE171320')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE171416')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE171702')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE171937')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE172032')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE173037')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE173046')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE176640')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE181829')
-INSERT Participate (groupId, studentId) VALUES (1, 'HE181879')
-INSERT Participate (groupId, studentId) VALUES (1, 'HS170024')
-INSERT Participate (groupId, studentId) VALUES (1, 'HS170726')
-INSERT Participate (groupId, studentId) VALUES (1, 'HS173175')
-INSERT Participate (groupId, studentId) VALUES (1, 'HS176033')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE161232')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE161643')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE163665')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE170123')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE170268')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE170302')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE170314')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE170317')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE170617')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE171209')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE171310')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE171883')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE172207')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE172366')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE172533')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE172693')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE172802')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE173328')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE173373')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE173476')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE173489')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE176275')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE176282')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE176285')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE176346')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE176360')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE176603')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE176686')
-INSERT Participate (groupId, studentId) VALUES (2, 'HE176834')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE161285')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE161816')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE163067')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170011')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170167')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170273')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170301')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170415')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170607')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170622')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170631')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170724')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170960')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE170999')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE171312')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE171411')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE171540')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE171628')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE171865')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE172037')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE172748')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE172838')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE172848')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE173248')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE173588')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE176077')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE176087')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE176169')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE176420')
-INSERT Participate (groupId, studentId) VALUES (5, 'HE176882')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE150732')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE150998')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE161224')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE161597')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE163629')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE170089')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE170685')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE170793')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE171358')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE171394')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE171421')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE171552')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE171908')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE171915')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE171916')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE171990')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE172180')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE172280')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE172313')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE172435')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE172527')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE172538')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE172702')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE172737')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE173401')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE173457')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE176211')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE176279')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE176633')
-INSERT Participate (groupId, studentId) VALUES (6, 'HE176747')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE161302')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE163675')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE170059')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE170141')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE170176')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE170262')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE170318')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE170416')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE170481')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE171285')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE171377')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE171511')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE171558')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE171827')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172058')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172063')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172083')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172084')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172163')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172262')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172386')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172398')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172460')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172467')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172568')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172610')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172717')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172787')
-INSERT Participate (groupId, studentId) VALUES (7, 'HE172851')
-INSERT Participate (groupId, studentId) VALUES (7, 'HS171380')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE161469')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE163233')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE171163')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE171403')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE171408')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE171590')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE171985')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE172734')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE172742')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE173033')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE176187')
-INSERT Participate (groupId, studentId) VALUES (9, 'HE176230')
+
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'DE170703')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE153678')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE161700')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE161706')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE161755')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE163415')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE163635')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE164044')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE170072')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE170180')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE170201')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE170203')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE170420')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE170595')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE171098')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE171319')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE171320')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE171416')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE171702')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE171937')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE172032')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE173037')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE173046')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE176640')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE181829')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HE181879')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HS170024')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HS170726')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HS173175')
+INSERT INTO Participate (groupId, studentId) VALUES (1, 'HS176033')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE161232')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE161643')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE163665')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE170123')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE170268')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE170302')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE170314')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE170317')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE170617')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE171209')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE171310')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE171883')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE172207')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE172366')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE172533')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE172693')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE172802')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE173328')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE173373')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE173476')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE173489')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE176275')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE176282')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE176285')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE176346')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE176360')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE176603')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE176686')
+INSERT INTO Participate (groupId, studentId) VALUES (2, 'HE176834')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE161285')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE161816')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE163067')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170011')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170167')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170273')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170301')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170415')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170607')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170622')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170631')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170724')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170960')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE170999')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE171312')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE171411')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE171540')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE171628')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE171865')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE172037')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE172748')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE172838')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE172848')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE173248')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE173588')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE176077')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE176087')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE176169')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE176420')
+INSERT INTO Participate (groupId, studentId) VALUES (5, 'HE176882')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE150732')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE150998')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE161224')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE161597')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE163629')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE170089')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE170685')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE170793')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE171358')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE171394')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE171421')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE171552')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE171908')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE171915')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE171916')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE171990')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE172180')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE172280')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE172313')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE172435')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE172527')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE172538')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE172702')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE172737')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE173401')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE173457')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE176211')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE176279')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE176633')
+INSERT INTO Participate (groupId, studentId) VALUES (6, 'HE176747')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE161302')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE163675')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE170059')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE170141')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE170176')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE170262')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE170318')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE170416')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE170481')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE171285')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE171377')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE171511')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE171558')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE171827')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172058')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172063')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172083')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172084')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172163')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172262')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172386')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172398')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172460')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172467')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172568')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172610')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172717')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172787')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HE172851')
+INSERT INTO Participate (groupId, studentId) VALUES (7, 'HS171380')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE161469')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE163233')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE171163')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE171403')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE171408')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE171590')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE171985')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE172734')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE172742')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE173033')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE176187')
+INSERT INTO Participate (groupId, studentId) VALUES (9, 'HE176230')
 
 --	PARTICIPATE SE1723
 --	Insert into Participate PRJ301 - SE1723
@@ -1091,6 +1096,296 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '11', '21/02/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '11', '21/02/2023 13:30:00 PM');
 
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '12', '24/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '0', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '0', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '0', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '0', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '0', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '0', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '0', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '0', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '13', '28/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '14', '03/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '0', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '0', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '0', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '0', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '0', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '0', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '0', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '0', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '15', '07/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '16', '10/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '0', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '0', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '0', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '0', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '0', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '0', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '0', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '0', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '17', '14/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '17', '14/03/2023 13:30:00 PM');
+/*
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '18', '17/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '0', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '0', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '0', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '0', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '0', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '0', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '0', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '0', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '19', '21/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160694', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161795', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164035', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '20', '24/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '20', '24/03/2023 15:30:00 PM');
+*/
 
 -- IOT102 Group 10
 SET DATEFORMAT dmy;
@@ -1122,7 +1417,6 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163639'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163653', '1', '116', '21/02/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163774', '1', '116', '21/02/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163906', '1', '116', '21/02/2023 17:00:00 PM');
-/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153487', '1', '117', '24/02/2023 15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160021', '1', '117', '24/02/2023 15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160120', '1', '117', '24/02/2023 15:00:00 PM');
@@ -1291,6 +1585,7 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163639'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163653', '1', '122', '14/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163774', '1', '122', '14/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163906', '1', '122', '14/03/2023 17:00:00 PM');
+/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153487', '1', '123', '17/03/2023 15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160021', '1', '123', '17/03/2023 15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160120', '1', '123', '17/03/2023 15:00:00 PM');
@@ -1535,41 +1830,6 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '81', '2/2/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '81', '2/2/2023 15:30:00 PM');
 
-/*
-
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE130464', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170038', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170351', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170436', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170459', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170593', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170625', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170663', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170704', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170855', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170911', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170913', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170966', '0', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171112', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171116', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171153', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171271', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171494', '0', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171519', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171547', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171589', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171601', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172039', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172040', '0', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172095', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172175', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172860', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172875', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176347', '1', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176485', '0', '95', '6/2/2023 13:30:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176673', '1', '95', '6/2/2023 13:30:00 PM');
-*/
-
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '95', '6/2/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '95', '6/2/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '95', '6/2/2023 13:30:00 PM');
@@ -1727,6 +1987,217 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '86', '23/02/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '86', '23/02/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '86', '23/02/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170662', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170738', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170800', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170827', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170995', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171110', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171364', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171534', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172014', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172264', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172372', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172701', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172717', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172726', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173209', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173235', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176292', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176767', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE180542', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '87', '27/02/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170662', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170738', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170800', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170827', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170995', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171110', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171364', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171534', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172014', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172264', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172372', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172701', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172717', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172726', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173209', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173235', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176292', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176767', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE180542', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '88', '02/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170662', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170738', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170800', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170827', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170995', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171110', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171364', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171534', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172014', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172264', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172372', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172701', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172717', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172726', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173209', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173235', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176292', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176767', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE180542', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '89', '03/06/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170662', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170738', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170800', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170827', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170995', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171110', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171364', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171534', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172014', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172264', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172372', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172701', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172717', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172726', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173209', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173235', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176292', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176767', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE180542', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '90', '09/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '90', '09/03/2023 15:30:00 PM');
+
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170662', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170738', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170800', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170827', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170995', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171110', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171364', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171534', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172014', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172264', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172372', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172701', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172717', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172726', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173209', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173235', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176292', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176767', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE180542', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '91', '13/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170662', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170738', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170800', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170827', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170995', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171110', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171364', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171534', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172014', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172264', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172372', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172701', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172717', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172726', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173209', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173235', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176292', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176767', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE180542', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '92', '16/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '92', '16/03/2023 15:30:00 PM');
+/*
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170662', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170738', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170800', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170827', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170995', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171110', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171364', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171534', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172014', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172264', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172372', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172701', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172717', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172726', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173209', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173235', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176292', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176767', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE180542', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '93', '20/03/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150271', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE150862', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170646', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170662', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170738', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170800', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170827', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170995', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171110', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171364', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE171534', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172014', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172264', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172372', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172701', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172717', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172726', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173209', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE173235', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176292', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176767', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE180542', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181024', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE181266', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE182276', '1', '94', '23/03/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE187276', '1', '94', '23/03/2023 15:30:00 PM');
+*/
 
 
 
@@ -2103,7 +2574,6 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172875
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176347', '1', '107', '23/2/2023 15:40:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176485', '1', '107', '23/2/2023 15:40:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176673', '1', '107', '23/2/2023 15:40:00 PM');
-/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE130464', '1', '108', '27/02/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170038', '1', '108', '27/02/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170351', '1', '108', '27/02/2023 13:30:00 PM');
@@ -2290,6 +2760,7 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE172875
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176347', '1', '113', '16/03/2023 15:40:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176485', '1', '113', '16/03/2023 15:40:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176673', '1', '113', '16/03/2023 15:40:00 PM');
+/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE130464', '1', '114', '20/03/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170038', '1', '114', '20/03/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE170351', '1', '114', '20/03/2023 13:30:00 PM');
@@ -2353,6 +2824,133 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176347
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176485', '1', '115', '23/03/2023 15:40:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime ) VALUES ('HE176673', '1', '115', '23/03/2023 15:40:00 PM');
 */
+
+
+--Group 4 --SWE sonnt
+Set dateformat dmy 
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151390', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161152', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161165', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161181', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163891', '0', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164019', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170012', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170027', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170147', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171284', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171454', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171518', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171587', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171927', '0', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172073', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172273', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172339', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172486', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172517', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172525', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172826', '0', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173222', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173258', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176027', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176125', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176256', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176715', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176743', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176810', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE181414', '1', '126', '14/01/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151390', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161152', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161165', '0', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161181', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163891', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164019', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170012', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170027', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170147', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171284', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171454', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171518', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171587', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171927', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172073', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172273', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172339', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172486', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172517', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172525', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172826', '0', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173222', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173258', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176027', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176125', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176256', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176715', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176743', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176810', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE181414', '1', '127', '11/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151390', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161152', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161165', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161181', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163891', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164019', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170012', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170027', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170147', '0', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171284', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171454', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171518', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171587', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171927', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172073', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172273', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172339', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172486', '0', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172517', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172525', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172826', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173222', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173258', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176027', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176125', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176256', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176715', '0', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176743', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176810', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE181414', '1', '128', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151390', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161152', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161165', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161181', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163891', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164019', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170012', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170027', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170147', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171284', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171454', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171518', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171587', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171927', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172073', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172273', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172339', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172486', '0', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172517', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172525', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172826', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173222', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173258', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176027', '0', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176125', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176256', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176715', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176743', '0', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176810', '1', '129', '11/03/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE181414', '1', '129', '11/03/2023 15:00:00 PM');
+
+
+
 -- MAS291	SE1723
 SET DATEFORMAT dmy 
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '36', '5/1/2023 13:30:00 PM');
@@ -2685,8 +3283,279 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '46', '20/2/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '46', '20/2/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '46', '20/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '47', '23/2/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '48', '27/2/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '49', '2/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '50', '6/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '51', '9/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '52', '13/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '53', '16/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '53', '16/3/2023 13:30:00 PM');
+/*
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '54', '20/3/2023 15:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '54', '20/3/2023 15:30:00 PM');
 
-
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140639', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140842', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161139', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161481', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161512', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161733', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161869', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '55', '23/3/2023 13:30:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '55', '23/3/2023 13:30:00 PM');
+*/
 
 -- JPD123	SE1723
 SET DATEFORMAT dmy 
@@ -3045,7 +3914,248 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '66', '23/02/2023 12:50:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '66', '23/02/2023 12:50:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '66', '23/02/2023 12:50:00 PM');
-
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153263', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153535', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160914', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161145', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161544', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161706', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161800', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161832', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '67', '27/02/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153263', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153535', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160914', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161145', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161544', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161706', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161800', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161832', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '68', '02/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153263', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153535', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160914', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161145', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161544', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161706', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161800', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161832', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '69', '06/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153263', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153535', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160914', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161145', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161544', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161706', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161800', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161832', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '70', '09/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153263', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153535', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160914', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161145', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161544', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161706', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161800', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161832', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '71', '13/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153263', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153535', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160914', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161145', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161544', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161706', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161800', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161832', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '72', '16/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '72', '16/03/2023 16:50:00 PM');
+/*
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153263', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153535', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160914', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161145', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161544', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161706', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161800', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161832', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '73', '20/03/2023 14:40:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171865', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153263', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153535', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160914', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161145', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161544', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161706', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161800', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161832', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '74', '23/03/2023 16:50:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '74', '23/03/2023 16:50:00 PM');
+*/
 
 
 --	SWE201c - SE1723
@@ -3140,71 +4250,340 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176586'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '0', '22', '11/2/2023  15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '0', '22', '11/2/2023  15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HS160715', '0', '22', '11/2/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140339', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150282', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160625', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160682', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161469', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161861', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161875', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161882', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161918', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163001', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163154', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163233', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171163', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171403', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171408', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171590', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171985', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172734', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172742', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173033', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176160', '1', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176187', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176230', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176586', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HS160715', '0', '23', '25/02/2023 15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE140339', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150282', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160625', '1', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160682', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161469', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161861', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161875', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161882', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161918', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163001', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163154', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163233', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171163', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171403', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171408', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171590', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171985', '1', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172734', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172742', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173033', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176160', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176187', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176230', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176586', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '0', '24', '11/3/2023  15:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HS160715', '0', '24', '11/3/2023  15:00:00 PM');
 
---Group 4
-Set dateformat dmy 
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151390', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161152', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161165', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161181', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163891', '0', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164019', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170012', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170027', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170147', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171284', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171454', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171518', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171587', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171927', '0', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172073', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172273', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172339', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172486', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172517', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172525', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172826', '0', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173222', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173258', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176027', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176125', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176256', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176715', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176743', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176810', '1', '126', '14/01/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE181414', '1', '126', '14/01/2023 15:00:00 PM');
 
 
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151390', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161152', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161165', '0', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161181', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163891', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE164019', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170012', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170027', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170147', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171284', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171454', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171518', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171587', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171927', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172073', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172273', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172339', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172486', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172517', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172525', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE172826', '0', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173222', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE173258', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176027', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176125', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176256', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176715', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176743', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176810', '1', '127', '11/02/2023 15:00:00 PM');
-INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE181414', '1', '127', '11/02/2023 15:00:00 PM');
+-- IOT102 -SE1723
 
-
-
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '0', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '0', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '26', '21/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '0', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '27', '24/02/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '0', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '0', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '0', '28', '28/02/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '0', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '0', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '0', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '29', '03/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '30', '07/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '31', '10/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '32', '14/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '32', '14/03/2023 17:00:00 PM');
+/*
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '33', '17/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '34', '21/03/2023 17:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170051', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170245', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170422', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170428', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170444', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170533', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170842', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170863', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170907', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE170996', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171071', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171073', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171162', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171442', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171482', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171578', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171687', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '35', '24/03/2023 13:00:00 PM');
+INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '35', '24/03/2023 13:00:00 PM');
+*/

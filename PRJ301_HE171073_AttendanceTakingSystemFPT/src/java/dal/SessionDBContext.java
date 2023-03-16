@@ -9,29 +9,25 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import model.Attend;
 import model.Course;
 import model.Group;
 import model.Instructor;
 import model.Room;
 import model.Session;
-import model.Student;
 import model.TimeSlot;
 
 public class SessionDBContext extends DBContext {
 
-    public ArrayList<Session> getSessionsOfCourse(String groupName, String courseId) {
+    public ArrayList<Session> getSessionsOfCourse(int groupId) {
         PreparedStatement stm = null;
         ResultSet rs = null;
         ArrayList<Session> sessions = new ArrayList<>();
         try {
-            String sql = "select * from Session ses join [group] g on ses.groupId = g.groupId WHERE g.groupName = ? AND g.courseId = ?";
+            String sql = "select * from Session ses join [group] g on ses.groupId = g.groupId WHERE g.groupId = ?";
             stm = connection.prepareStatement(sql);
-            stm.setString(1, groupName);
-            stm.setString(2, courseId);
+            stm.setInt(1, groupId);
             rs = stm.executeQuery();
             while (rs.next()) {
                 Session s = new Session();

@@ -32,12 +32,11 @@ public abstract class BaseAuthenticationController extends HttpServlet {
                 }
                 return checkAccount(request, user);
             }
+
             return false;
 
-        } else {
-
-            return checkAccount(request, account.getUsername());
         }
+        return checkAccount(request, account.getUsername());
 
     }
 
@@ -78,5 +77,22 @@ public abstract class BaseAuthenticationController extends HttpServlet {
             response.getWriter().println("access denied");
         }
     }
-
+    public static String getAccountId(HttpServletRequest request, HttpServletResponse response){
+        Account account = (Account) request.getSession().getAttribute("account");
+        String accountId = null;
+        if (account == null) {
+            Cookie[] cookies = request.getCookies();
+            if (cookies != null) {
+                for (Cookie cooky : cookies) {
+                    if (cooky.getName().equals("username")) {
+                        accountId = cooky.getValue();
+                        break;
+                    }
+                }
+            }
+        } else {
+            accountId = account.getUsername();
+        }
+        return accountId;
+    }
 }

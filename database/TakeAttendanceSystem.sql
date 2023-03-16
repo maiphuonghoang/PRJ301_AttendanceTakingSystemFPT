@@ -207,17 +207,6 @@ JOIN [Session] ses ON ses.groupId = c.groupId
 JOIN Attend att ON att.studentId = c.studentId  AND ses.sessionId = att.sessionId  
 WHERE ses.[date] = '03/02/2023'
 
---	2. TAKE ATTENDANCE Chưa có dữ liệu 
---	Attendance for sonnt5 at slot 3 on Friday 21/03/2023.
---	This is the session number 19 of the PRJ301 - SE1723
-SELECT c.groupName [Group], c.studentId AS [Roll Number], c.studentName AS [Full Name],
-	   att.[status] Present, att.comment Comment, c.studentImage [Image], ses.roomId
-FROM (SELECT s.studentId, s.studentName, s.studentImage, g.groupId, g.groupName
-			FROM Student s JOIN Participate p ON s.studentId = p.studentId
-			JOIN [Group] g ON p.groupId = g.groupId WHERE g.groupId = 15 ) as c 
-JOIN [Session] ses ON ses.groupId = c.groupId 
-JOIN Attend att ON att.studentId = c.studentId  AND ses.sessionId = att.sessionId  
-WHERE ses.date = '21/03/2023'
 
 --	3. TIMETABLE 
 --	Week 20/02/2023 to 26/02/2023 of lecturer SonNT5
@@ -229,10 +218,6 @@ WHERE i.instructorId = 'sonnt5'
 AND ses.date BETWEEN '20/02/2023' AND '26/02/2023' ORDER BY ses.date
 
 SELECT s.sessionId, roomId, lecturerId, s.slotId, s.groupId, s.date from [Session] s WHERE s.lecturerId = 'sonnt5'
-				  
-select *  from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
-select ses.sessionId, ses.date, t.slotNumber, ses.lecturerId, ses.groupId, ses.roomId, ses.sessionStatus from [Session] ses JOIN TimeSlot t ON ses.slotId = t.slotId 
-
 
 SELECT COUNT(*) AS Total FROM Account a 
 INNER JOIN Account_Role ar on a.username = ar.username 
@@ -304,30 +289,32 @@ select * from Session ses join [group] g on ses.groupId = g.groupId where g.cour
 select * from participate p  join student s on p.studentId = s.studentId join [group] g on g.groupId = p.groupId WHERE courseId='PRN221' AND groupName='SE1638-NET'
 
 go
-CREATE PROC Percent_Absent @groupName varchar(20), @courseId varchar(10)
+CREATE PROC Percent_Absent @groupId int 
 AS
 BEGIN 
 	DECLARE @total int, @current int
 	select @total = count(*) from Session ses join [group] g on ses.groupId = g.groupId 
-					where courseId = @courseId AND g.groupName = @groupName 
+					where g.groupId = @groupId
 	select @current = count(*) from Session ses join [group] g on ses.groupId = g.groupId 
-					where courseId = @courseId AND g.groupName = @groupName AND ses.sessionStatus = 1
-	SELECT s.studentId, s.studentName, COUNT(*) AS  numPresent , ROUND((CAST(@current - COUNT(*) AS float) / @total*100),2) as percentAbsent
+					where g.groupId = @groupId AND ses.sessionStatus = 1
+	SELECT s.studentId, s.studentName, COUNT(*) AS  numPresent, 
+	ROUND((CAST(@current - COUNT(*) AS float) / @total*100),2) as percentAbsent
 	FROM Student s JOIN Attend a ON a.studentId = s.studentId
 	JOIN  [Session] ses ON a.sessionId = ses.sessionId
 	JOIN [Group] g On g.groupId = ses.groupId 
-	WHERE  g.groupName = @groupName AND g.courseId = @courseId AND a.status = 1
+	WHERE  g.groupId = @groupId AND a.status = 1
 	GROUP BY  s.studentId, s.studentName
 END 
 go
-EXEC Percent_Absent 'SE1723', 'PRJ301'
-EXEC Percent_Absent 'SE1638-NET', 'PRN221'
-EXEC Percent_Absent 'SE1826', 'SSG104'
-EXEC Percent_Absent 'SE1722', 'IOT102'
---DROP PROC Percent_Absent
+EXEC Percent_Absent 4
 
+--DROP PROC Percent_Absent
+select count(*) from Session ses join [group] g on ses.groupId = g.groupId 
+					where g.groupId =4
+select count(*) from Session ses join [group] g on ses.groupId = g.groupId 
+					where g.groupId = 4 AND ses.sessionStatus = 1
 go
-CREATE PROC Report_Attend @groupName varchar(20), @courseId varchar(10)
+CREATE PROC Report_Attend @groupId int
 AS
 BEGIN 
 SELECT s.studentId, s.studentName,ses.groupId, g.groupName, 
@@ -336,25 +323,28 @@ FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId
 LEFT JOIN [Group] g On g.groupId = p.groupId 
 LEFT JOIN [Session] ses ON ses.groupId = g.groupId
 LEFT JOIN Attend a ON a.sessionId = ses.sessionId AND a.studentId = s.studentId
-WHERE g.groupName = @groupName AND g.courseId = @courseId order by studentId, date
+WHERE g.groupId = @groupId order by studentId, date
 END 
 go 
-EXEC Report_Attend 'SE1723', 'PRJ301'
-EXEC Report_Attend 'SE1638-NET', 'PRN221'
-EXEC Report_Attend 'SE1826', 'SSG104'
+EXEC Report_Attend 8
 --DROP PROC Report_Attend
 
 select s.studentId from account a join student s on a.username = s.accountId where a.username = 'he171073@fpt.edu.vn'
 select i.instructorId from account a join Instructor i on a.username = i.accountId where a.username = 'sonnt5@fpt.edu.vn'
 
 --timetable student 
-SELECT ses.groupId, g.groupName, g.courseId,
+SELECT  stu.studentId, ses.groupId, g.groupName, g.courseId,
 ses.date,  ses.[sessionStatus], ses.roomId, ses.sessionId,
 t.slotNumber, t.startTime, t.endTime, a.status 
-FROM Student s JOIN  Attend a ON s.studentId = a.studentId
-JOIN [Session] ses ON  a.sessionId = ses.sessionId
-JOIN TimeSlot t ON ses.slotId = t.slotId 
-JOIN Room r ON r.roomId = ses.roomId
-JOIN [Group] g On g.groupId = ses.groupId 
-WHERE s.studentId = 'HE171073'
-AND ses.date BETWEEN '02/06/2023' AND '02/12/2023'
+FROM Student stu 
+JOIN Participate p on stu.studentId = p.studentId
+JOIN [Group] g on g.groupId = p.groupId
+JOIN [Session] ses on ses.groupId = g.groupId
+LEFT JOIN TimeSlot t ON ses.slotId = t.slotId 
+LEFT JOIN Room r ON r.roomId = ses.roomId
+LEFT JOIN Attend a on a.studentId = stu.studentId AND a.sessionId = ses.sessionId
+WHERE stu.studentId = 'HE171073' 
+AND ses.date BETWEEN '03/06/2023' AND '03/12/2023'
+
+
+

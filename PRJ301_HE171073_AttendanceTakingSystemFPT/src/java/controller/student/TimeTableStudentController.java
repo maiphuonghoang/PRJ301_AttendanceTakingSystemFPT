@@ -15,7 +15,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
-import model.Account;
 import model.Attend;
 import model.Student;
 import util.ChatGPT;
@@ -26,21 +25,8 @@ public class TimeTableStudentController extends BaseAuthenticationController {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        Account account = (Account) request.getSession().getAttribute("account");
-        String accountId = null;
-        if (account == null) {
-            Cookie[] cookies = request.getCookies();
-            if (cookies != null) {
-                for (Cookie cooky : cookies) {
-                    if (cooky.getName().equals("username")) {
-                        accountId = cooky.getValue();
-                        break;
-                    }
-                }
-            }
-        } else {
-            accountId = account.getUsername();
-        }
+        
+        String accountId = BaseAuthenticationController.getAccountId(request,response);
         Student s = new AccountDBContext().getStudentFromAccount(accountId);
         String studentId = s.getStudentId();
         String date = request.getParameter("date");
