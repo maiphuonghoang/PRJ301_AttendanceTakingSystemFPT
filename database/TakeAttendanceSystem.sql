@@ -289,17 +289,30 @@ JOIN [Group] g On g.groupId = ses.groupId
 WHERE  g.groupName = 'SE1723' AND g.courseId = 'PRJ301' AND a.status = 1
 group by  s.studentId, s.studentName, a.status
 
+SELECT g.courseId, g.groupName, s.studentId, s.studentName,COUNT(*) AS numPresent 
+FROM Student s JOIN Attend a ON a.studentId = s.studentId
+JOIN  [Session] ses ON a.sessionId = ses.sessionId
+JOIN [Group] g On g.groupId = ses.groupId 
+WHERE  g.groupName = 'SE1638-NET' AND g.courseId = 'PRN221' AND a.status = 1
+group by  s.studentId, s.studentName, a.status,g.courseId, g.groupName
+
 select count(*) as numberSlot from Session ses join [group] g on ses.groupId = g.groupId where courseId = 'IOT102' AND ses.sessionStatus = 1
 select * from Session ses join [group] g on ses.groupId = g.groupId where courseId = 'IOT102' AND g.groupName = 'SE1722' AND ses.sessionStatus = 1
-select ses.date  from Session ses join [group] g on ses.groupId = g.groupId WHERE g.groupId = 3
+select * from Session ses join [group] g on ses.groupId = g.groupId where g.courseId = 'PRN221' AND g.groupName = 'SE1638-NET' order by ses.date
+select * from Session ses join [group] g on ses.groupId = g.groupId where g.courseId = 'PRJ301' AND g.groupName = 'SE1723' 
+
+select * from participate p  join student s on p.studentId = s.studentId join [group] g on g.groupId = p.groupId WHERE courseId='PRN221' AND groupName='SE1638-NET'
+
 go
 CREATE PROC Percent_Absent @groupName varchar(20), @courseId varchar(10)
 AS
 BEGIN 
-	DECLARE @total int
+	DECLARE @total int, @current int
 	select @total = count(*) from Session ses join [group] g on ses.groupId = g.groupId 
+					where courseId = @courseId AND g.groupName = @groupName 
+	select @current = count(*) from Session ses join [group] g on ses.groupId = g.groupId 
 					where courseId = @courseId AND g.groupName = @groupName AND ses.sessionStatus = 1
-	SELECT s.studentId, s.studentName, COUNT(*) AS  numPresent , ROUND((CAST(@total - COUNT(*) AS float) / @total*100),2) as percentAbsent
+	SELECT s.studentId, s.studentName, COUNT(*) AS  numPresent , ROUND((CAST(@current - COUNT(*) AS float) / @total*100),2) as percentAbsent
 	FROM Student s JOIN Attend a ON a.studentId = s.studentId
 	JOIN  [Session] ses ON a.sessionId = ses.sessionId
 	JOIN [Group] g On g.groupId = ses.groupId 
@@ -323,10 +336,25 @@ FROM Student s LEFT JOIN  Participate p On s.studentId =p.studentId
 LEFT JOIN [Group] g On g.groupId = p.groupId 
 LEFT JOIN [Session] ses ON ses.groupId = g.groupId
 LEFT JOIN Attend a ON a.sessionId = ses.sessionId AND a.studentId = s.studentId
-WHERE g.groupName = @groupName AND g.courseId = @courseId order by ses.date
+WHERE g.groupName = @groupName AND g.courseId = @courseId order by studentId, date
 END 
 go 
 EXEC Report_Attend 'SE1723', 'PRJ301'
 EXEC Report_Attend 'SE1638-NET', 'PRN221'
 EXEC Report_Attend 'SE1826', 'SSG104'
 --DROP PROC Report_Attend
+
+select s.studentId from account a join student s on a.username = s.accountId where a.username = 'he171073@fpt.edu.vn'
+select i.instructorId from account a join Instructor i on a.username = i.accountId where a.username = 'sonnt5@fpt.edu.vn'
+
+--timetable student 
+SELECT ses.groupId, g.groupName, g.courseId,
+ses.date,  ses.[sessionStatus], ses.roomId, ses.sessionId,
+t.slotNumber, t.startTime, t.endTime, a.status 
+FROM Student s JOIN  Attend a ON s.studentId = a.studentId
+JOIN [Session] ses ON  a.sessionId = ses.sessionId
+JOIN TimeSlot t ON ses.slotId = t.slotId 
+JOIN Room r ON r.roomId = ses.roomId
+JOIN [Group] g On g.groupId = ses.groupId 
+WHERE s.studentId = 'HE171073'
+AND ses.date BETWEEN '02/06/2023' AND '02/12/2023'

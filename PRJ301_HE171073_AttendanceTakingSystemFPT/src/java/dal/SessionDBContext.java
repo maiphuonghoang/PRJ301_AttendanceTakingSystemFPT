@@ -12,14 +12,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import model.Attend;
 import model.Course;
 import model.Group;
 import model.Instructor;
 import model.Room;
 import model.Session;
+import model.Student;
 import model.TimeSlot;
 
 public class SessionDBContext extends DBContext {
+
     public ArrayList<Session> getSessionsOfCourse(String groupName, String courseId) {
         PreparedStatement stm = null;
         ResultSet rs = null;
@@ -33,7 +36,7 @@ public class SessionDBContext extends DBContext {
             while (rs.next()) {
                 Session s = new Session();
                 s.setSessionId(rs.getInt("sessionId"));
-                
+
                 Group g = new Group();
                 g.setGroupId(rs.getInt("groupId"));
                 s.setGroupId(g);
@@ -61,7 +64,7 @@ public class SessionDBContext extends DBContext {
 
     }
 
-    public ArrayList<Session> getSessionByWeek(String lecturerId, Date from, Date to) {
+    public ArrayList<Session> getSessionInstructorByWeek(String lecturerId, Date from, Date to) {
         PreparedStatement stm = null;
         ResultSet rs = null;
         ArrayList<Session> sessions = new ArrayList<>();
@@ -128,6 +131,7 @@ public class SessionDBContext extends DBContext {
         return sessions;
     }
 
+
     public void updateSessionStatus(int sessionId) {
         PreparedStatement stm = null;
         ResultSet rs = null;
@@ -154,18 +158,19 @@ public class SessionDBContext extends DBContext {
         }
 
     }
+
     public static void main(String[] args) {
-        List<Session> list = new SessionDBContext().getSessionsOfCourse("SE1723", "PRJ301");
-        for (Session session : list) {
-            System.out.println(session);
-        }
-    
-//        List<Session> list = new SessionDBContext().getSessionByWeek("sonnt5", Date.valueOf("2023-02-20"), Date.valueOf("2023-02-26"));
-//        for (Session session : list) {
+//        List<Session> list3 = new SessionDBContext().getSessionsOfCourse("SE1723", "PRJ301");
+//        for (Session session : list3) {
 //            System.out.println(session);
 //        }
-//        List<Session> list = new SessionDBContext().getAllSessions();
-//        for (Session session : list) {
+//
+//        List<Session> list2 = new SessionDBContext().getSessionInstructorByWeek("sonnt5", Date.valueOf("2023-02-20"), Date.valueOf("2023-02-26"));
+//        for (Session session : list2) {
+//            System.out.println(session);
+//        }
+//        List<Session> list1 = new SessionDBContext().getAllSessions();
+//        for (Session session : list1) {
 //            System.out.println(session);
 //        }
     }

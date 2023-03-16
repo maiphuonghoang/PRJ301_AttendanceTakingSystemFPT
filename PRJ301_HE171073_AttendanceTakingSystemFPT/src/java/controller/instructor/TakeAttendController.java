@@ -54,7 +54,7 @@ public class TakeAttendController extends BaseAuthenticationController {
                     .recordTime(ChatGPT.getCurrentDateTime())
                     .build());
         }
-        ArrayList<Attend> takedStatusStudents = new AttendDBContext().insertTakedAttendsBySession(sessionId, takedStatus);
+        new AttendDBContext().insertTakedAttendsBySession(sessionId, takedStatus);
         new SessionDBContext().updateSessionStatus(sessionId);
         response.sendRedirect("viewattend?sessionId="+sessionId);
 

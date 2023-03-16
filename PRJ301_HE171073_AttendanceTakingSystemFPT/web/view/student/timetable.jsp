@@ -1,6 +1,6 @@
 <%-- 
     Document   : timetable
-    Created on : Mar 10, 2023, 2:54:13 PM
+    Created on : Mar 12, 2023, 1:41:52 AM
     Author     : maiphuonghoang
 --%>
 
@@ -48,11 +48,8 @@
             </header>
             <div class="app__container">
                 <div class="grid wide">
-
+                    ${requestScope.studentId}
                     <form action="timetable" method="post" id="searchForm">      
-                        <center>
-                            Lecturer: ${requestScope.lecturerId}
-                        </center>
                         <table border="1">
                             <tr>
                                 <th rowspan="2"><input type="date" name="date"  value="${selectdate}" onchange="submitForm();" ></th>
@@ -78,24 +75,24 @@
                                 <tr>
                                     <td>Slot ${n}</td>
                                     <c:forEach items="${requestScope.sameWeekDays}" var="d">
-                                        <td>
-                                            <c:forEach items="${requestScope.sessions}" var="s">
-                                                <c:if test="${s.date eq d and s.slotId.slotNumber eq n}">
-                                                    <div class="${s.date eq d and s.slotId.slotNumber eq n ?"hasSlot":""}">
-                                                        ${s.groupId.groupName}-${s.groupId.courseId.courseId}<br/>
-                                                        at ${s.roomId.roomId}<br/>
-                                                        <c:if test="${s.sessionStatus}">
-                                                            (<font color=Green>Attended</font>)<br/>
-                                                            <a href="updateattend?sessionId=${s.sessionId}">(<font color=blue>Update attend</font>)</a>
-                                                            </c:if>
-                                                            <c:if test="${!s.sessionStatus}">
-                                                            (<font color=red>Not yet</font>)<br/>
-                                                            <a href="takeattend?sessionId=${s.sessionId}">(<font color=blue>Take attend</font>)</a>
-                                                            </c:if>
-                                                        <br/> <fmt:formatDate value="${s.slotId.startTime}" pattern="HH:mm" /> - <fmt:formatDate value="${s.slotId.endTime}" pattern="HH:mm" />
-
+                                        <td>                                         
+                                            <c:forEach items="${requestScope.attends}" var="a">
+                                                <c:if test="${a.sessionId.date eq d and a.sessionId.slotId.slotNumber eq n}">
+                                                    <div class="${a.sessionId.date eq d and a.sessionId.slotId.slotNumber eq n ?"hasSlot":""}">
+                                                        ${a.sessionId.groupId.groupName}-${a.sessionId.groupId.courseId.courseId}<br/>
+                                                        at ${a.sessionId.roomId.roomId}<br/>
+                                                        <c:if test="${a.status and a.sessionId.sessionStatus}">
+                                                            (<font color=Green>Attended</font>)
+                                                        </c:if>
+                                                        <c:if test="${!a.status and a.sessionId.sessionStatus}">
+                                                            (<font color=red>Absent</font>)
+                                                        </c:if>
+                                                        <c:if test="${!a.status and  !a.sessionId.sessionStatus}">
+                                                            (<font color=blue>Not yet</font>)
+                                                            
+                                                        </c:if>
+                                                        <br/> <fmt:formatDate value="${a.sessionId.slotId.startTime}" pattern="HH:mm" /> - <fmt:formatDate value="${a.sessionId.slotId.endTime}" pattern="HH:mm" />
                                                     </div>
-
                                                 </c:if>
                                             </c:forEach>
                                         </td>

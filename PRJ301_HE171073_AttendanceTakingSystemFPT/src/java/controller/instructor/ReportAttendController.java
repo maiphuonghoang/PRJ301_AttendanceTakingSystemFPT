@@ -32,6 +32,7 @@ public class ReportAttendController extends BaseAuthenticationController {
         ArrayList<Group> groups = new GroupDBContext().getGroupsByIntructor("sonnt5");
         request.setAttribute("attends", attends);
         request.setAttribute("courseId", courseId);
+        request.setAttribute("groupName", groupName);
         request.setAttribute("groups", groups);
         request.setAttribute("sessions", sessions);
         request.setAttribute("percents", percents);

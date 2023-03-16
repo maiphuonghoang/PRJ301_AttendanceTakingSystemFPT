@@ -4,7 +4,6 @@
     Author     : maiphuonghoang
 --%>
 
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -92,14 +91,12 @@
                         </thead>
                         <tbody>
                             <c:forEach items="${percents}" var="entry">
-
                                 <tr>
-
                                     <td>${entry.key.studentId}</td>
                                     <td colspan='5'>${entry.key.studentName}</td>
                                     <td>${entry.value}%</td>
                                     <c:forEach items="${attends}" var="a">
-                                        <c:if test="${entry.key.studentId eq a.studentId.studentId}">
+                                        <c:if test="${entry.key.studentId.equals(a.studentId.studentId)}">
                                             <td>
                                                 <c:if test="${a.status && a.sessionId.sessionStatus}">
                                                     <font color=green>P</font>
@@ -121,7 +118,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="grid wide note">
+                <div style="margin-left: 30px;">
                     <br>
                     <b>Note</b>:</p>
                     <ul>
@@ -139,7 +136,3 @@
 
     </body>
 </html>
-<!--/
-
-I want when the course be selected the group belong to that course will be loaded. how to solve in jstl . here is the code 
--->

@@ -5,7 +5,6 @@
 package controller.authentication;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
@@ -21,7 +20,7 @@ public class LogoutController extends HttpServlet {
         Cookie[] cookies = request.getCookies();
         if (cookies != null) {
             for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("username") || cookie.getName().equals("password")) {
+                if (cookie.getName().equals("username") || cookie.getName().equals("password")||cookie.getName().equals("accountId")) {
                     // Set the cookie to expire immediately
                     cookie.setMaxAge(0);
                     // Add the cookie to the response to delete it
