@@ -383,16 +383,96 @@ public class AttendDBContext extends DBContext {
         return attends;
     }
 
+    public ArrayList<Attend> getAttendsByStudent(int groupId, String studentId) {
+        PreparedStatement stm = null;
+        ResultSet rs = null;
+        ArrayList<Attend> attends = new ArrayList<>();
+        try {
+            String sql = "SELECT s.studentId, s.studentName,ses.groupId, g.groupName,\n"
+                    + "ses.date,  ses.[sessionStatus], ses.roomId, ses.lecturerId, a.status, ses.sessionId,\n"
+                    + "t.slotNumber, t.startTime, t.endTime, ISNULL(a.comment,'') AS comment\n"
+                    + "FROM Student s JOIN  Participate p On s.studentId =p.studentId\n"
+                    + "JOIN [Group] g On g.groupId = p.groupId \n"
+                    + "JOIN [Session] ses ON ses.groupId = g.groupId\n"
+                    + "JOIN TimeSlot t ON t.slotId = ses.slotId\n"
+                    + "JOIN Room r ON r.roomId = ses.roomId\n"
+                    + "LEFT JOIN Attend a ON a.sessionId = ses.sessionId AND a.studentId = s.studentId\n"
+                    + "WHERE g.groupId = ? AND s.studentId = ? order by ses.date";
+            stm = connection.prepareStatement(sql);
+            stm.setInt(1, groupId);
+            stm.setString(2, studentId);
+            rs = stm.executeQuery();
+            while (rs.next()) {
+                Room r = Room.builder()
+                        .roomId(rs.getString("roomId"))
+                        .build();
+
+                TimeSlot t = TimeSlot.builder()
+                        .slotNumber(rs.getInt("slotNumber"))
+                        .startTime(rs.getTime("startTime"))
+                        .endTime(rs.getTime("endTime"))
+                        .build();
+
+                Group g = Group.builder()
+                        .groupId(rs.getInt("groupId"))
+                        .groupName(rs.getString("groupName"))
+                        .build();
+                Student s = Student.builder()
+                        .studentId(rs.getString("studentId"))
+                        .studentName(rs.getString("studentName"))
+                        .build();
+                Instructor i = Instructor.builder()
+                        .instructorId(rs.getString("lecturerId")).build();
+                Session ses = Session.builder()
+                        .sessionId(rs.getInt("sessionId"))
+                        .date(rs.getDate("date"))
+                        .sessionStatus(rs.getBoolean("sessionStatus"))
+                        .groupId(g)
+                        .roomId(r)
+                        .slotId(t)
+                        .lecturerId(i)
+                        .build();
+                Attend a = Attend.builder()
+                        .studentId(s)
+                        .sessionId(ses)
+                        .status(rs.getBoolean("status"))
+                        .comment(rs.getString("comment"))
+                        .build();
+                attends.add(a);
+            }
+        } catch (Exception ex) {
+            System.out.println("loi lay ra tat ca cac thong tin attend cua 1 student");
+
+        } finally {
+            try {
+                stm.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(AttendDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            try {
+                connection.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(AttendDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return attends;
+
+    }
+
     public static void main(String[] args) {
+        ArrayList<Attend> attends6 = new AttendDBContext().getAttendsByStudent(15, "HE171073");
+        for (Attend attend : attends6) {
+            System.out.println(attend);
+        }
 //         AttendDBContext db = new AttendDBContext();
 //        LinkedHashMap<Student, Float> attends4 = db.getReportAbsentPercentage("SE1638-NET", "PRN221");
 //        for (HashMap.Entry<Student, Float> entry : attends4.entrySet()) {
 //            System.out.println(entry.getKey()+ " " + entry.getValue());
 //        }
-        ArrayList<Attend> attends5 = new AttendDBContext().getSessionStudentByWeek("HE171073", Date.valueOf("2023-02-06"), Date.valueOf("2023-02-12"));
-        for (Attend attend : attends5) {
-            System.out.println(attend);
-        }
+//        ArrayList<Attend> attends5 = new AttendDBContext().getSessionStudentByWeek("HE171073", Date.valueOf("2023-02-06"), Date.valueOf("2023-02-12"));
+//        for (Attend attend : attends5) {
+//            System.out.println(attend);
+//        }
 //        ArrayList<Attend> attends3 = new AttendDBContext().getReportAttendsOfGroup("SE1638-NET", "PRN221");
 //        for (Attend attend : attends3) {
 //            System.out.println(attend);

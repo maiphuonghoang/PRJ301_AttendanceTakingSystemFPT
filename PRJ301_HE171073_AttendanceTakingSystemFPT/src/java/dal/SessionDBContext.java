@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Course;
@@ -25,7 +26,7 @@ public class SessionDBContext extends DBContext {
         ResultSet rs = null;
         ArrayList<Session> sessions = new ArrayList<>();
         try {
-            String sql = "select * from Session ses join [group] g on ses.groupId = g.groupId WHERE g.groupId = ?";
+            String sql = "select * from [Session] ses join [Group] g on ses.groupId = g.groupId  WHERE g.groupId = ?";
             stm = connection.prepareStatement(sql);
             stm.setInt(1, groupId);
             rs = stm.executeQuery();
@@ -127,7 +128,6 @@ public class SessionDBContext extends DBContext {
         return sessions;
     }
 
-
     public void updateSessionStatus(int sessionId) {
         PreparedStatement stm = null;
         ResultSet rs = null;
@@ -155,12 +155,65 @@ public class SessionDBContext extends DBContext {
 
     }
 
+    public ArrayList<Session> getSessionsOfStudent(String studentId) {
+        PreparedStatement stm = null;
+        ResultSet rs = null;
+        ArrayList<Session> sessions = new ArrayList<>();
+        try {
+            String sql = "SELECT  stu.studentId, g.groupId, g.groupName, g.courseId, c.courseName\n"
+                    + "FROM Student stu \n"
+                    + "JOIN Participate p on stu.studentId = p.studentId\n"
+                    + "JOIN [Group] g on g.groupId = p.groupId\n"
+                    + "JOIN Course c on c.courseId = g.courseId WHERE stu.studentId = ?";
+            stm = connection.prepareStatement(sql);
+            stm.setString(1, studentId);
+            rs = stm.executeQuery();
+            while (rs.next()) {
+                Session s = new Session();
+
+                Course c = Course.builder()
+                        .courseId(rs.getString("courseId"))
+                        .courseName(rs.getString("courseName"))
+                        .build();
+
+                Group g = new Group();
+                g.setGroupId(rs.getInt("groupId"));
+                g.setGroupName(rs.getString("groupName"));
+                g.setCourseId(c);
+                s.setGroupId(g);
+
+                sessions.add(s);
+
+            }
+        } catch (Exception ex) {
+            System.out.println("loi lay ra tat ca cac sessions");
+
+        } finally {
+            try {
+                stm.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(SessionDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            try {
+                connection.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(SessionDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return sessions;
+
+    }
+
     public static void main(String[] args) {
-//        List<Session> list3 = new SessionDBContext().getSessionsOfCourse("SE1723", "PRJ301");
+//        List<Session> list3 = new SessionDBContext().getSessionsOfCourse(15);
 //        for (Session session : list3) {
 //            System.out.println(session);
 //        }
-//
+        List<Session> list3 = new SessionDBContext().getSessionsOfStudent("HE171073");
+        for (Session session : list3) {
+            System.out.println(session);
+        }
+
 //        List<Session> list2 = new SessionDBContext().getSessionInstructorByWeek("sonnt5", Date.valueOf("2023-02-20"), Date.valueOf("2023-02-26"));
 //        for (Session session : list2) {
 //            System.out.println(session);

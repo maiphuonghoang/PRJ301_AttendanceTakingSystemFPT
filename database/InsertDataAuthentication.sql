@@ -1043,6 +1043,8 @@ INSERT INTO Feature (featureId, featureName, [url]) VALUES (3,	'Take Attendance 
 INSERT INTO Feature (featureId, featureName, [url]) VALUES (4,	'Report Attendance of Group','/instructor/reportattend')
 INSERT INTO Feature (featureId, featureName, [url]) VALUES (5,	'Update Attendance of Group','/instructor/updateattend')
 INSERT INTO Feature (featureId, featureName, [url]) VALUES (6,	'Update Attendance of Group','/instructor/viewattend')
+INSERT INTO Feature (featureId, featureName, [url]) VALUES (7,	'Report Attendance of Student','/student/reportattend')
+
 
 
 INSERT INTO Role_Feature (roleId, featureId) VALUES (1,	1)
@@ -1057,4 +1059,6 @@ INSERT INTO Role_Feature (roleId, featureId) VALUES (2,	4)
 INSERT INTO Role_Feature (roleId, featureId) VALUES (2,	5)
 INSERT INTO Role_Feature (roleId, featureId) VALUES (2,	6)
 INSERT INTO Role_Feature (roleId, featureId) VALUES (3,	2)
+INSERT INTO Role_Feature (roleId, featureId) VALUES (3,	7)
+
 

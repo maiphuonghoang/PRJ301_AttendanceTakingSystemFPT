@@ -19,6 +19,5 @@
             Remember your account <input type="checkbox" name="remember" value="true" /><br>
             <input type="submit" value="Login" />
         </form>
-
     </body>
 </html>

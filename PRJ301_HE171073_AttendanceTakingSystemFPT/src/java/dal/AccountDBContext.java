@@ -48,12 +48,15 @@ public class AccountDBContext extends DBContext {
         PreparedStatement stm = null;
         ResultSet rs = null;
         try {
-            String sql = "select s.studentId from account a join student s on a.username = s.accountId where a.username = ?";
+            String sql = "select s.studentId, s.studentName from account a join student s on a.username = s.accountId where a.username = ?";
             stm = connection.prepareStatement(sql);
             stm.setString(1, accountId);
             rs = stm.executeQuery();
             if (rs.next()) {
-                Student s = Student.builder().studentId(rs.getString("studentId")).build();
+                Student s = Student.builder()
+                        .studentId(rs.getString("studentId"))
+                        .studentName(rs.getString("studentName"))
+                        .build();
                 return s;
             }
         } catch (SQLException ex) {

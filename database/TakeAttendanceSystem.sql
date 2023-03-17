@@ -346,5 +346,24 @@ LEFT JOIN Attend a on a.studentId = stu.studentId AND a.sessionId = ses.sessionI
 WHERE stu.studentId = 'HE171073' 
 AND ses.date BETWEEN '03/06/2023' AND '03/12/2023'
 
+-- report attend student 
+SELECT s.studentId, s.studentName,ses.groupId, g.groupName,
+ses.date,  ses.[sessionStatus], ses.roomId, ses.lecturerId, a.status, ses.sessionId,
+t.slotNumber, t.startTime, t.endTime, ISNULL(a.comment,'') AS comment
+FROM Student s JOIN  Participate p On s.studentId =p.studentId
+JOIN [Group] g On g.groupId = p.groupId 
+JOIN [Session] ses ON ses.groupId = g.groupId
+JOIN TimeSlot t ON t.slotId = ses.slotId
+JOIN Room r ON r.roomId = ses.roomId
+LEFT JOIN Attend a ON a.sessionId = ses.sessionId AND a.studentId = s.studentId
+WHERE g.groupId = 15 AND s.studentId = 'HE171073' order by ses.date
 
+select * from course
+select * from [Session] ses join [Group] g on ses.groupId = g.groupId JOIN Course c ON c.courseId = g.courseId WHERE g.groupId = 15
+
+SELECT  stu.studentId, G.groupId, g.groupName, g.courseId, c.courseName
+FROM Student stu 
+JOIN Participate p on stu.studentId = p.studentId
+JOIN [Group] g on g.groupId = p.groupId
+JOIN Course c on c.courseId = g.courseId WHERE stu.studentId = 'HE171073'
 
