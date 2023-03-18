@@ -86,11 +86,19 @@
                                                         at ${s.roomId.roomId}<br/>
                                                         <c:if test="${s.sessionStatus}">
                                                             (<font color=Green>Attended</font>)<br/>
-                                                            <a href="updateattend?sessionId=${s.sessionId}">(<font color=blue>Update attend</font>)</a>
-                                                            </c:if>
-                                                            <c:if test="${!s.sessionStatus}">
+                                                            <c:if test="${today eq s.date}">
+                                                                <a href="updateattend?sessionId=${s.sessionId}">(<font color=blue>Update attend</font>)</a>
+                                                                </c:if>
+                                                                <c:if test="${!(today eq s.date)}">
+                                                                <a href="viewattend?sessionId=${s.sessionId}">(<font color=orange>View attend</font>)</a>
+
+                                                            </c:if>                                                                
+                                                        </c:if>
+                                                        <c:if test="${!s.sessionStatus}">
                                                             (<font color=red>Not yet</font>)<br/>
-                                                            <a href="takeattend?sessionId=${s.sessionId}">(<font color=blue>Take attend</font>)</a>
+                                                            <c:if test="${today eq s.date}">
+                                                                <a href="takeattend?sessionId=${s.sessionId}">(<font color=blue>Take attend</font>)</a>
+                                                                </c:if>
                                                             </c:if>
                                                         <br/> <fmt:formatDate value="${s.slotId.startTime}" pattern="HH:mm" /> - <fmt:formatDate value="${s.slotId.endTime}" pattern="HH:mm" />
 

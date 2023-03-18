@@ -49,12 +49,13 @@
                 <div class="">
                     <form action="reportattend" action="POST">
                         <center>
-
-                            Lecture: ${lecturerId}
-                            <select name="groupId" id="groupSelect">
+                            Lecture: ${lecturerId}                       
+                            <select name="groupId">
+                                <option value="" disabled selected>Choose a course</option>
                                 <c:forEach items="${groups}" var="g">
-
-                                    <option value="${g.groupId}" >${g.courseId.courseId} - ${g.groupName}</option>
+                                    <option value="${g.groupId}" ${g.groupId eq groupId?"selected":""} >
+                                        ${g.courseId.courseId} - ${g.groupName}
+                                    </option>
 
                                 </c:forEach>
                             </select>
@@ -62,47 +63,49 @@
 
                         </center>                                       
                     </form>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>RollNumber</th>
-                                <th colspan='5'>Student Name</th>
-                                <th>ABSENT (%) SO FAR</th>
-                                    <c:forEach items="${sessions}" var="s" varStatus="index">
-
-                                    <th><fmt:formatDate value="${s.date}" pattern="dd-MM" /><br /><br />${index.index + 1}</th>
-                                    </c:forEach>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <c:forEach items="${percents}" var="entry">
+                    <c:if test="${attends!=null && attends.size()>0}">
+                        <table>
+                            <thead>
                                 <tr>
-                                    <td>${entry.key.studentId}</td>
-                                    <td colspan='5'>${entry.key.studentName}</td>
-                                    <td>${entry.value}%</td>
-                                    <c:forEach items="${attends}" var="a">
-                                        <c:if test="${entry.key.studentId.equals(a.studentId.studentId)}">
-                                            <td>
-                                                <c:if test="${a.status && a.sessionId.sessionStatus}">
-                                                    <font color=green>P</font>
-                                                </c:if>
-                                                <c:if test="${!a.status && a.sessionId.sessionStatus}">
-                                                    <font color=red>A</font>
-                                                </c:if>
-                                                <c:if test="${!a.status && !a.sessionId.sessionStatus}">
-                                                    -
-                                                </c:if>
-                                            </td>
-                                        </c:if>
+                                    <th>RollNumber</th>
+                                    <th colspan='5'>Student Name</th>
+                                    <th>ABSENT (%) SO FAR</th>
+                                        <c:forEach items="${sessions}" var="s" varStatus="index">
 
-                                    </c:forEach>
+                                        <th><fmt:formatDate value="${s.date}" pattern="dd-MM" /><br /><br />${index.index + 1}</th>
+                                        </c:forEach>
 
                                 </tr>
-                            </c:forEach>
+                            </thead>
+                            <tbody>
+                                <c:forEach items="${percents}" var="entry">
+                                    <tr>
+                                        <td>${entry.key.studentId}</td>
+                                        <td colspan='5'>${entry.key.studentName}</td>
+                                        <td>${entry.value}%</td>
+                                        <c:forEach items="${attends}" var="a">
+                                            <c:if test="${entry.key.studentId.equals(a.studentId.studentId)}">
+                                                <td>
+                                                    <c:if test="${a.status && a.sessionId.sessionStatus}">
+                                                        <font color=green>P</font>
+                                                    </c:if>
+                                                    <c:if test="${!a.status && a.sessionId.sessionStatus}">
+                                                        <font color=red>A</font>
+                                                    </c:if>
+                                                    <c:if test="${!a.status && !a.sessionId.sessionStatus}">
+                                                        -
+                                                    </c:if>
+                                                </td>
+                                            </c:if>
 
-                        </tbody>
-                    </table>
+                                        </c:forEach>
+
+                                    </tr>
+                                </c:forEach>
+
+                            </tbody>
+                        </table>
+                    </c:if>
                 </div>
                 <div style="margin-left: 80px;">
                     <br>

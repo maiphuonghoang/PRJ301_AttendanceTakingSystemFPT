@@ -43,6 +43,7 @@ public class TimeTableInstructorController extends BaseAuthenticationController 
         request.setAttribute("sessions", sessions);
         request.setAttribute("selectdate", selectdate);
         request.setAttribute("lecturerId", lecturerId);
+        request.setAttribute("today", java.sql.Date.valueOf(java.time.LocalDate.now()));
         request.getRequestDispatcher("../view/instructor/timetable.jsp").forward(request, response);
     }
 

@@ -32,9 +32,15 @@ public class ReportAttendStudentController extends BaseAuthenticationController 
         request.setAttribute("studentName", s.getStudentName());
         request.setAttribute("attends", attends);
         request.setAttribute("sessions", sessions);
-        for (Session session : sessions) {
-            System.out.println(session);
+        int numAbsent = 0;
+        for (Attend attend : attends) {
+            if (!attend.isStatus() && attend.getSessionId().isSessionStatus()) {
+                numAbsent++;
+            }
         }
+        double percentage = (double)numAbsent / attends.size()*100;
+        request.setAttribute("numAbsent", numAbsent);
+        request.setAttribute("percentage", percentage);
         request.getRequestDispatcher("../view/student/reportattend.jsp").forward(request, response);
     }
 

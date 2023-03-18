@@ -45,6 +45,7 @@ public class LoginController extends HttpServlet {
                 response.addCookie(uCookie);
                 response.addCookie(pCookie);
             }
+            response.sendRedirect("index.html");
             
         } else {
 

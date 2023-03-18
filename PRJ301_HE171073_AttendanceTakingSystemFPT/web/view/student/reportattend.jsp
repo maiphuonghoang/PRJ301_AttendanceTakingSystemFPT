@@ -178,7 +178,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan='8'><b>Absent</b>: 0% absent so far (0 absent on ${attends.size()} total).</td>
+                                <td colspan='8'><b>Absent</b>: ${percentage}% absent so far (${numAbsent} absent on ${attends.size()} total).</td>
                             </tr>
                         </tfoot>
                     </table>

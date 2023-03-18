@@ -2,7 +2,7 @@ package util;
 
 /**
  *
- * @author ADMIN
+ * @author maiphuonghoang
  */
 import java.sql.Date;
 import java.sql.Timestamp;
@@ -15,7 +15,6 @@ import java.util.Locale;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 
 public class ChatGPT {
 
@@ -41,7 +40,7 @@ public static Timestamp getCurrentDateTime() {
 }
 
     public static void main(String[] args) {
-        System.out.println();
+        System.out.println(Date.valueOf(LocalDate.now()));
         java.sql.Timestamp currentDateTime = getCurrentDateTime();
         System.out.println(currentDateTime.toString());
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
