@@ -24,25 +24,32 @@
     </head>
     <body>
         <div class="app">
+
             <header class="header">
                 <div class="grid wide">
+                    <div class="logo">
+                        <img class="logo-img" src="../image/FPT_logo_2010.svg.png" alt="alt"/>
+                        <h1 style="display: inline-block; margin-left: 4px; font-weight: 300">University Academic Portal</h1>                       
+                    </div>
+
                     <div class="header__navbar">
 
-                        <div class="header__title">FPT University Academic Portal</div>
+
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__link" href="#">Timetable</a>
+                                <a class="header__link panel" href="timetable">Timetable</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="">Take Attendance</a>
+                                <a class="header__link panel" href="reportattend">Report group attendance</a>
                             </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">View Attendance</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">Report</a>
-                            </li>
+
                         </ul>
+                        <div>
+                            <a href="" class="label label-hover">${sessionScope.account.username}</a>&nbsp|
+                            <a href="../logout" class="label label-danger">Logout</a>&nbsp|       
+                            <span class="label label-hover">CAMPUS: FPTU-Hòa Lạc</span>
+                        </div>
+
                     </div>
                 </div>
             </header>
@@ -50,25 +57,22 @@
                 <div class="grid wide">
 
                     <form action="timetable" method="post" id="searchForm">      
-                        <center>
-                            Lecturer: ${requestScope.lecturerId}
-                        </center>
+                        <!--                        <center>
+                                                    Lecturer: ${requestScope.lecturerId}
+                                                </center>-->
                         <table border="1">
                             <tr>
                                 <th rowspan="2"><input type="date" name="date"  value="${selectdate}" onchange="submitForm();" ></th>
-                                <th>Mon</th>
-                                <th>Tue</th>
-                                <th>Wed</th>
-                                <th>Thu</th>
-                                <th>Fri</th>
-                                <th>Sat</th>
-                                <th>Sun</th>
-
+                                    <c:forEach items="${sameWeekDays}" var="d">
+                                    <th>
+                                        <fmt:formatDate value="${d}" pattern="EEEE" /> 
+                                    </th>
+                                </c:forEach>
                             </tr>
                             <tr>
                                 <c:forEach items="${sameWeekDays}" var="d">
                                     <td>
-                                        ${d} 
+                                        <fmt:formatDate value="${d}" pattern="dd/MM/yyyy" />
                                     </td>
 
                                 </c:forEach>
@@ -87,20 +91,27 @@
                                                         <c:if test="${s.sessionStatus}">
                                                             (<font color=Green>Attended</font>)<br/>
                                                             <c:if test="${today eq s.date}">
-                                                                <a href="updateattend?sessionId=${s.sessionId}">(<font color=blue>Update attend</font>)</a>
-                                                                </c:if>
-                                                                <c:if test="${!(today eq s.date)}">
-                                                                <a href="viewattend?sessionId=${s.sessionId}">(<font color=orange>View attend</font>)</a>
+                                                                <a href="updateattend?sessionId=${s.sessionId}">
+                                                                    <span class="label label-primary">Update attend</span>
+                                                                </a>
+                                                            </c:if>
+                                                            <c:if test="${!(today eq s.date)}">
+                                                                <a href="viewattend?sessionId=${s.sessionId}">
+                                                                    <span class="label label-warning">View attend</span>
+                                                                </a>
 
                                                             </c:if>                                                                
                                                         </c:if>
                                                         <c:if test="${!s.sessionStatus}">
                                                             (<font color=red>Not yet</font>)<br/>
                                                             <c:if test="${today eq s.date}">
-                                                                <a href="takeattend?sessionId=${s.sessionId}">(<font color=blue>Take attend</font>)</a>
-                                                                </c:if>
+                                                                <a href="takeattend?sessionId=${s.sessionId}">
+                                                                    <span class="label label-primary">Take attend</span>
+                                                                </a>
                                                             </c:if>
-                                                        <br/> <fmt:formatDate value="${s.slotId.startTime}" pattern="HH:mm" /> - <fmt:formatDate value="${s.slotId.endTime}" pattern="HH:mm" />
+                                                        </c:if>
+                                                        <br/> 
+                                                        <span class="label label-success"><fmt:formatDate value="${s.slotId.startTime}" pattern="HH:mm" /> - <fmt:formatDate value="${s.slotId.endTime}" pattern="HH:mm" /></span>
 
                                                     </div>
 
@@ -120,5 +131,6 @@
                 </div>
             </div>
         </div>
+
     </body>
 </html>

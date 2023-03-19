@@ -19,23 +19,29 @@
         <div class="app">
             <header class="header">
                 <div class="grid wide">
+                    <div class="logo">
+                        <img class="logo-img" src="../image/FPT_logo_2010.svg.png" alt="alt"/>
+                        <h1 style="display: inline-block; margin-left: 4px; font-weight: 300">University Academic Portal</h1>                       
+                    </div>
+
                     <div class="header__navbar">
 
-                        <div class="header__title">FPT University Academic Portal</div>
+
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__link" href="#">Timetable</a>
+                                <a class="header__link panel" href="timetable">Timetable</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="">Take Attendance</a>
+                                <a class="header__link panel" href="reportattend">Report group attendance</a>
                             </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">View Attendance</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">Report</a>
-                            </li>
+
                         </ul>
+                        <div>
+                            <a href="" class="label label-hover">${sessionScope.account.username}</a>&nbsp|
+                            <a href="../logout" class="label label-danger">Logout</a>&nbsp|       
+                            <span class="label label-hover">CAMPUS: FPTU-Hòa Lạc</span>
+                        </div>
+
                     </div>
                 </div>
             </header>
@@ -74,11 +80,12 @@
                                         <span id="">${a.studentId.studentName}</span>
                                     </td>
                                     <td>
-                                        <input id="" type="radio" name="status${index.index}" value="absent" ${!a.status ? "checked" : ""} /><label for="">Absent</label>
+                                        <input id="${a.studentId.studentId}" type="radio" name="status${index.index}" value="absent" ${a.status ? "checked" : ""} />
+                                        <label for="${a.studentId.studentId}">Absent</label>
                                     </td>
                                     <td>
-                                        <input id="" type="radio" name="status${index.index}" value="present" ${a.status ? "checked" : ""} /><label
-                                            for="">Present</label>
+                                        <input id="${a.studentId.studentName}" type="radio" name="status${index.index}" value="present" ${!a.status ? "checked" : ""} /><label
+                                            for="${a.studentId.studentName}">Present</label>
                                     </td>
 
                                     <td>

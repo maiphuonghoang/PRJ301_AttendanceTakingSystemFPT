@@ -156,7 +156,7 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (15, 1, '7/3/2023', 3, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (16, 1, '10/3/2023', 4, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (17, 1, '14/3/2023', 3, 'sonnt5', 15, 'BE-303');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (18, 0, '17/3/2023', 4, 'sonnt5', 15, 'BE-303');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (18, 1, '17/3/2023', 4, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (19, 0, '21/3/2023', 3, 'sonnt5', 15, 'BE-303');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (20, 0, '24/3/2023', 4, 'sonnt5', 15, 'BE-303');
 
@@ -173,7 +173,7 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (30, 1, '07/03/2023', 4, 'yennth126', 12, 'BE-307');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (31, 1, '10/03/2023', 3, 'yennth126', 12, 'BE-307');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (32, 1, '14/03/2023', 4, 'yennth126', 12, 'BE-307');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (33, 0, '17/03/2023', 3, 'yennth126', 12, 'BE-307');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (33, 1, '17/03/2023', 3, 'yennth126', 12, 'BE-307');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (34, 0, '21/03/2023', 4, 'yennth126', 12, 'BE-307');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (35, 0, '24/03/2023', 3, 'yennth126', 12, 'BE-307');
 
@@ -271,7 +271,7 @@ INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (120, 1, '07/03/2023', 4, 'sonnt5', 10, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (121, 1, '10/03/2023', 3, 'sonnt5', 10, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (122, 1, '14/03/2023', 4, 'sonnt5', 10, 'BE-304');
-INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (123, 0, '17/03/2023', 3, 'sonnt5', 10, 'BE-304');
+INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (123, 1, '17/03/2023', 3, 'sonnt5', 10, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (124, 0, '21/03/2023', 4, 'sonnt5', 10, 'BE-304');
 INSERT INTO Session (sessionId, sessionStatus, date, slotId, lecturerId, groupId, roomId) VALUES (125, 0, '24/03/2023', 3, 'sonnt5', 10, 'BE-304');
 
@@ -1288,7 +1288,6 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '17', '14/03/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '17', '14/03/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '17', '14/03/2023 13:30:00 PM');
-/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '1', '18', '17/03/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '1', '18', '17/03/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '1', '18', '17/03/2023 15:30:00 PM');
@@ -1321,6 +1320,7 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '18', '17/03/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE03520', '1', '18', '17/03/2023 15:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('SE04495', '1', '18', '17/03/2023 15:30:00 PM');
+/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE150057', '0', '19', '21/03/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE151095', '0', '19', '21/03/2023 13:30:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153206', '0', '19', '21/03/2023 13:30:00 PM');
@@ -1585,7 +1585,6 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163639'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163653', '1', '122', '14/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163774', '1', '122', '14/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163906', '1', '122', '14/03/2023 17:00:00 PM');
-/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153487', '1', '123', '17/03/2023 15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160021', '1', '123', '17/03/2023 15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160120', '1', '123', '17/03/2023 15:00:00 PM');
@@ -1614,6 +1613,7 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163639'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163653', '1', '123', '17/03/2023 15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163774', '1', '123', '17/03/2023 15:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163906', '1', '123', '17/03/2023 15:00:00 PM');
+/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE153487', '1', '124', '21/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160021', '0', '124', '21/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160120', '0', '124', '21/03/2023 17:00:00 PM');
@@ -4513,7 +4513,6 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '32', '14/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '32', '14/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '32', '14/03/2023 17:00:00 PM');
-/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '33', '17/03/2023 13:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '33', '17/03/2023 13:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '33', '17/03/2023 13:00:00 PM');
@@ -4538,6 +4537,7 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE171851'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182', '1', '33', '17/03/2023 13:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '33', '17/03/2023 13:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '33', '17/03/2023 13:00:00 PM');
+/*
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE160071', '1', '34', '21/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE161357', '1', '34', '21/03/2023 17:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE163146', '1', '34', '21/03/2023 17:00:00 PM');
@@ -4587,3 +4587,36 @@ INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176182'
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176697', '1', '35', '24/03/2023 13:00:00 PM');
 INSERT INTO Attend (studentId, status, sessionId, recordTime) VALUES ('HE176751', '1', '35', '24/03/2023 13:00:00 PM');
 */
+
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=OiQZKQ7rlGwVyLZ1H/ujwQ==&Campus=3' WHERE StudentId = 'HE150057'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE151095'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE153206'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE160694'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE161357'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE161795'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE163146'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE164035'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170051'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170245'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170422'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170428'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170444'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170533'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170842'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170863'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170907'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE170996'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171071'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171073'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171162'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171442'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171482'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171578'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171687'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171851'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE171865'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE176182'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE176697'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'HE176751'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'SE03520'
+UPDATE Student SET studentImage = 'https://fap.fpt.edu.vn/ImageHandler.ashx?RollNumber=bgC0NcSt7861e51F2gWvxg==&Campus=3' WHERE StudentId = 'SE04495'

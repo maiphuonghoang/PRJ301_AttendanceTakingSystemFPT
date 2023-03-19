@@ -28,7 +28,7 @@ public class LogoutController extends HttpServlet {
                 response.addCookie(cookie);
             }
         }
-        request.getRequestDispatcher("view/authentication/logout.jsp").forward(request, response);
+        response.sendRedirect("login");
     }
 
     @Override

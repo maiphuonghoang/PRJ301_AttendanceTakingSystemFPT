@@ -62,16 +62,10 @@
                         <div class="header__title">FPT University Academic Portal</div>
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__link" href="#">Timetable</a>
+                                <a class="header__link" href="timetable">Timetable</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="">Take Attendance</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">View Attendance</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">Report</a>
+                                <a class="header__link" href="reportattend">Report attendance</a>
                             </li>
                         </ul>
                     </div>

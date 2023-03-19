@@ -28,20 +28,14 @@
                 <div class="grid wide">
                     <div class="header__navbar">
 
-                        <div class="header__title">FPT University Academic Portal</div>
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__link" href="#">Timetable</a>
+                                <a class="header__link" href="timetable">Timetable</a>
                             </li>
                             <li class="header__item">
-                                <a class="header__link" href="">Take Attendance</a>
+                                <a class="header__link" href="reportattend">Report group attendance</a>
                             </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">View Attendance</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">Report</a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -89,7 +83,7 @@
                                                         </c:if>
                                                         <c:if test="${!a.status and  !a.sessionId.sessionStatus}">
                                                             (<font color=blue>Not yet</font>)
-                                                            
+
                                                         </c:if>
                                                         <br/> <fmt:formatDate value="${a.sessionId.slotId.startTime}" pattern="HH:mm" /> - <fmt:formatDate value="${a.sessionId.slotId.endTime}" pattern="HH:mm" />
                                                     </div>
