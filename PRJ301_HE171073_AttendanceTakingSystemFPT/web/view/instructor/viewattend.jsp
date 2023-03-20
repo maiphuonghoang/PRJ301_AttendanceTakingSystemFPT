@@ -1,7 +1,7 @@
 <%-- 
-    Document   : updateattend
+    Document   : viewattend
     Created on : Mar 14, 2023, 12:54:17 AM
-    Author     : ADMIN
+    Author     : maiphuonghoang
 --%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -15,6 +15,7 @@
         <title>JSP Page</title>
         <link href="../css/base.css" rel="stylesheet" type="text/css"/>
         <link href="../css/takeattend.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
     </head>
     <body>
 
@@ -130,7 +131,12 @@
 
                 </div>
             </div>
+
         </div>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <script src="../js/returntop.js" ></script>
 
     </body>
 </html>

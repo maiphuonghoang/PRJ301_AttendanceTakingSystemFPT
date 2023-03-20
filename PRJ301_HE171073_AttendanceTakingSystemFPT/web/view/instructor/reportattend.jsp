@@ -13,6 +13,8 @@
         <title>JSP Page</title>
         <link href="../css/base.css" rel="stylesheet" type="text/css"/>
         <link href="../css/takeattend.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
         <style >
             .app__container{
                 font-size: 0.75rem;
@@ -24,7 +26,7 @@
 
         <div class="app">
             <header class="header">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="logo">
                         <img class="logo-img" src="../image/FPT_logo_2010.svg.png" alt="alt"/>
                         <h1 style="display: inline-block; margin-left: 4px; font-weight: 300">University Academic Portal</h1>                       
@@ -73,7 +75,7 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th>RollNumber</th>
+                                    <th>Roll Number</th>
                                     <th colspan='5'>Student Name</th>
                                     <th>ABSENT (%) SO FAR</th>
                                         <c:forEach items="${sessions}" var="s" varStatus="index">
@@ -87,7 +89,7 @@
                                 <c:forEach items="${percents}" var="entry">
                                     <tr>
                                         <td>${entry.key.studentId}</td>
-                                        <td colspan='5'>${entry.key.studentName}</td>
+                                        <td style="text-align: start; padding-left: 15px" colspan='5'>${entry.key.studentName}</td>
                                         <td>${entry.value}%</td>
                                         <c:forEach items="${attends}" var="a">
                                             <c:if test="${entry.key.studentId.equals(a.studentId.studentId)}">
@@ -128,7 +130,11 @@
                 </div>
             </div>
         </div>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
 
+        <script src="../js/returntop.js" ></script>
 
     </body>
 </html>

@@ -1,7 +1,7 @@
 <%-- 
     Document   : login
     Created on : Mar 5, 2023, 3:42:47 PM
-    Author     : ADMIN
+    Author     : maiphuongoang
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -14,11 +14,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <!--<img src="./image/FPT2.jpg"/>-->
-            <!--<img src="./image/fpt-mb.png"/>-->
-                        <img src="./image/fpt3.png"/>
-
-
+            <img src="./image/fpt3.png"/>
         </div>
 
         <div class="main">
@@ -29,7 +25,7 @@
 
                     <div class="form-group">
                         <label for="username" class="form-label">Username</label>
-                        <input value="${username}" id ="username" name="username" type="text" placeholder="VD: email@fpt.edu.vn" class="form-control">
+                        <input value="${username}" id ="username" name="username" type="text" placeholder="abc@fpt.edu.vn" class="form-control">
                         <span class="form-message"></span>
                     </div>
 

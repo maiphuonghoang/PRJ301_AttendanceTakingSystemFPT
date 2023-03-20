@@ -13,6 +13,8 @@
         <title>JSP Page</title>
         <link href="../css/base.css" rel="stylesheet" type="text/css"/>
         <link href="../css/takeattend.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
     </head>
     <body>
 
@@ -85,8 +87,8 @@
                                         <label for="${a.studentId.studentId}">Absent</label>
                                     </td>
                                     <td>
-                                        <input id="${a.studentId.studentId}" type="radio" name="status${index.index}" value="present" ${a.status ? "checked" : ""} />
-                                        <label for="${a.studentId.studentId}">Present</label>
+                                        <input id="${a.studentId.studentName}" type="radio" name="status${index.index}" value="present" ${a.status ? "checked" : ""} />
+                                        <label for="${a.studentId.studentName}">Present</label>
                                     </td>
 
                                     <td>
@@ -117,6 +119,10 @@
                 </div>
             </div>
         </div>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
 
+        <script src="../js/returntop.js" ></script>
     </body>
 </html>

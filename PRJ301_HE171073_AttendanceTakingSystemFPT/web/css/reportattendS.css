@@ -1,0 +1,49 @@
+
+/* 
+    Created on : Mar 21, 2023, 12:42:24 AM
+    Author     : maiphuonghoang
+*/
+.app__container{
+    font-size: 0.75rem;
+}
+.row {
+    display: flex;
+}
+.left{
+    flex: 2;
+}
+.right{
+    flex: 3;
+}
+.min-withTd{
+    min-width: 130px;
+}
+.term{
+    width: 90px;
+}
+td{
+    padding: 15px 0;
+}
+ul{
+    list-style: none;
+
+}
+.student-course{
+    padding: 15px 0;
+
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.active{
+    color: blue;
+}
+table{
+    width: 100%
+}
+
+td{
+    padding: 15px 10px;
+}
