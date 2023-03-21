@@ -45,7 +45,9 @@
 
                         </ul>
                         <div>
-                            <a href="" class="label label-hover">${sessionScope.account.username}</a>&nbsp|
+                            <a href="" class="label label-hover">
+                                ${sessionScope.account.username}
+                            </a>&nbsp|
                             <a href="../logout" class="label label-danger">Logout</a>&nbsp|       
                             <span class="label label-hover">CAMPUS: FPTU-Hòa Lạc</span>
                         </div>
@@ -57,9 +59,9 @@
                 <div class="grid wide">
 
                     <form action="timetable" method="post" id="searchForm">      
-                        <!--                        <center>
-                                                    Lecturer: ${requestScope.lecturerId}
-                                                </center>-->
+                        <center>
+                            Lecturer: ${requestScope.lecturerId}
+                        </center>
                         <table border="1">
                             <tr>
                                 <th rowspan="2"><input type="date" name="date"  value="${selectdate}" onchange="submitForm();" ></th>

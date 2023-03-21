@@ -45,7 +45,9 @@
 
                         </ul>
                         <div>
-                            <a href="" class="label label-hover">${sessionScope.account.username}</a>&nbsp|
+                            <a href="" class="label label-hover">
+                                ${sessionScope.account.username}
+                            </a>&nbsp|
                             <a href="../logout" class="label label-danger">Logout</a>&nbsp|       
                             <span class="label label-hover">CAMPUS: FPTU-Hòa Lạc</span>
                         </div>

@@ -25,6 +25,7 @@ public abstract class BaseAuthenticationController extends HttpServlet {
                 for (Cookie cooky : cookies) {
                     if (cooky.getName().equals("username")) {
                         user = cooky.getValue();
+                        request.getSession().setAttribute("username", cooky.getValue());
                     }
                     if (cooky.getName().equals("password")) {
                         pass = cooky.getValue();

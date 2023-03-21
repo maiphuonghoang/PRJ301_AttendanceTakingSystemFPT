@@ -33,9 +33,6 @@ public class TimeTableInstructorController extends BaseAuthenticationController 
         if (date == null) {
             date = ChatGPT.getToday();
         }
-        Cookie accountCookie = new Cookie("accountId", lecturerId);
-        accountCookie.setMaxAge(24 * 3600);
-        response.addCookie(accountCookie);
         Date selectdate = Date.valueOf(date);
         List<Date> sameWeekDays = ChatGPT.getDaysInSameWeekOfMonth(selectdate);
         ArrayList<Session> sessions = new SessionDBContext().getSessionInstructorByWeek(lecturerId, sameWeekDays.get(0), sameWeekDays.get(sameWeekDays.size() - 1));

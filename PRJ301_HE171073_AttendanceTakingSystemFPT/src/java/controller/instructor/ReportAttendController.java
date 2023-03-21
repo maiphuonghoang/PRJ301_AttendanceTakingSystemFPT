@@ -26,28 +26,25 @@ public class ReportAttendController extends BaseAuthenticationController {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        String accountId = BaseAuthenticationController.getAccountId(request, response);
+        Instructor i = new AccountDBContext().getInstructorFromAccount(accountId);
+        String lecturerId = i.getInstructorId();
+        request.setAttribute("lecturerId", lecturerId);
         if (request.getParameter("groupId") == null) {
-            String accountId = BaseAuthenticationController.getAccountId(request, response);
-            Instructor i = new AccountDBContext().getInstructorFromAccount(accountId);
-            String lecturerId = i.getInstructorId();
             ArrayList<Group> groups = new GroupDBContext().getGroupsByIntructor(lecturerId);
-             request.setAttribute("groups", groups);
+            request.setAttribute("groups", groups);
             request.getRequestDispatcher("../view/instructor/reportattend.jsp").forward(request, response);
         } else {
             int groupId = Integer.parseInt(request.getParameter("groupId"));
             ArrayList<Attend> attends = new AttendDBContext().getReportAttendsOfGroup(groupId);
             LinkedHashMap<Student, Float> percents = new AttendDBContext().getReportAbsentPercentage(groupId);
             ArrayList<Session> sessions = new SessionDBContext().getSessionsOfCourse(groupId);
-            String accountId = BaseAuthenticationController.getAccountId(request, response);
-            Instructor i = new AccountDBContext().getInstructorFromAccount(accountId);
-            String lecturerId = i.getInstructorId();
             ArrayList<Group> groups = new GroupDBContext().getGroupsByIntructor(lecturerId);
             request.setAttribute("attends", attends);
             request.setAttribute("groupId", groupId);
             request.setAttribute("groups", groups);
             request.setAttribute("sessions", sessions);
             request.setAttribute("percents", percents);
-            request.setAttribute("lecturerId", lecturerId);
             request.getRequestDispatcher("../view/instructor/reportattend.jsp").forward(request, response);
         }
 

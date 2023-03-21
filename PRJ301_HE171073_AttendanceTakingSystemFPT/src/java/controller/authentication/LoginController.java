@@ -45,7 +45,13 @@ public class LoginController extends HttpServlet {
                 response.addCookie(uCookie);
                 response.addCookie(pCookie);
             }
-            response.sendRedirect("instructor/timetable");
+            int num = new AccountDBContext().getNumberOfRoles(username, "/student/timetable");
+            if (num > 0) {
+                response.sendRedirect("student/timetable");
+            } else {
+                response.sendRedirect("instructor/timetable");
+
+            }
         } else {
 
             request.setAttribute("username", username);
