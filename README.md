@@ -1,10 +1,17 @@
+# Detailed Specification
+
+This is an individual assignment of PRJ301 - Attendance Taking Sub-System
+You are asked to provide a web application for Attendance Taking & Student Grade Management System at FPT University 
+(I know, FPT already got one, but let assume we are reconstructing it).
+You can base on existing sources to develop your design including: fap.fpt.edu.vn, flm.fpt.edu.vn, ...
 
 ## Login for student and lecturer 
 ![LOGIN!](mockupScreen/login.png)
 
 # Lecturer account
 ## Timetable of lecturer
-[TIMETABLE-LECTURER!](mockupScreen/timetableInstructor.png)
+
+![TIMETABLE-LECTURER!](mockupScreen/timetableInstructor.png)
 ## Lecturer takes attendance for a class
 ![TAKE-ATTEND!](mockupScreen/takeAttendance.png)
 
@@ -20,5 +27,7 @@
 
 ## Student views report attendence of their classes 
 ![REPORT-STUDENT-ATTEND!](mockupScreen/reportattendStudent.png)
+
+
 
 
