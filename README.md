@@ -12,20 +12,20 @@ You can base on existing sources to develop your design including: fap.fpt.edu.v
 ### Timetable of lecturer
 
 ![TIMETABLE-LECTURER!](mockupScreen/timetableInstructor.png)
-### Lecturer takes attendance for a class
+### Lecturer takes attendance for a group 
 ![TAKE-ATTEND!](mockupScreen/takeAttendance.png)
 
-### Lecturer views attendance of a class after taking attendance
+### Lecturer views attendance of a group after taking attendance
 ![VIEW-ATTEND!](mockupScreen/viewAttendOfGroup.png)
 
-### Report attendance of lecturer's classes 
+### Report attendance of lecturer's groups 
 ![REPORT-GROUP-ATTEND!](mockupScreen/reportAttendGroup.png)
 
 ## Student account
 ### Timetable of students
 ![TIMETABLE-STUDENT!](mockupScreen/timetableStudent.png)
 
-### Student views report attendence of their classes 
+### Student views report attendence of their groups 
 ![REPORT-STUDENT-ATTEND!](mockupScreen/reportattendStudent.png)
 
 
