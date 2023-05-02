@@ -1,4 +1,4 @@
-﻿--CREATE DATABASE PRJ301_TakeAttendanceSystem
+--CREATE DATABASE PRJ301_TakeAttendanceSystem
 USE PRJ301_TakeAttendanceSystem
 
 CREATE TABLE Account (
@@ -366,4 +366,3 @@ FROM Student stu
 JOIN Participate p on stu.studentId = p.studentId
 JOIN [Group] g on g.groupId = p.groupId
 JOIN Course c on c.courseId = g.courseId WHERE stu.studentId = 'HE171073'
-
