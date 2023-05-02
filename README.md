@@ -35,6 +35,6 @@ You can base on existing sources to develop your design including: fap.fpt.edu.v
 * Databse: SQL Server
 
 
-#### © SEMESTER SPRING 2023 mai.phương.hoàng |
+#### FPTU Semester SPRING 2023 © mai.phương.hoàng |
 
 
