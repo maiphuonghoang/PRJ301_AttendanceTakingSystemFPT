@@ -1,7 +1,7 @@
-# 1. Detailed Specification
+## 1. Detailed Specification
 
-This is an individual assignment of PRJ301 - **Attendance Taking Sub-System**\
-You are asked to provide a web application for Attendance Taking & Student Grade Management System at FPT University 
+This is an individual assignment of PRJ301\
+You are asked to provide a web application for *Attendance Taking System* at FPT University\
 (I know, FPT already got one, but let assume we are reconstructing it).\
 You can base on existing sources to develop your design including: fap.fpt.edu.vn, flm.fpt.edu.vn, ...
 
@@ -29,7 +29,7 @@ You can base on existing sources to develop your design including: fap.fpt.edu.v
 ![REPORT-STUDENT-ATTEND!](mockupScreen/reportattendStudent.png)
 
 
-# 2. Tool
+## 2. Tool
 * Backend: Java JSP Servlet
 * Frontend: HTML CSS 
 * Databse: SQL Server
