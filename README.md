@@ -32,7 +32,7 @@ You can base on existing sources to develop your design including: fap.fpt.edu.v
 ## 2. Tool
 * Backend: Java JSP Servlet
 * Frontend: HTML CSS 
-* Databse: SQL Server
+* Database: SQL Server
 
 
 #### FPTU Semester SPRING 2023 © mai.phương.hoàng |
